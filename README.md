@@ -1,8 +1,10 @@
 # H2O Memory: TopoPhase reference prototype
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22212460.svg)](https://doi.org/10.5281/zenodo.22212460)
+
 H2O Memory explores an AI memory architecture in which canonical observations remain auditable while epistemic formation and storage placement are controlled independently. This repository contains the minimum falsifiable TypeScript reference prototype for that research direction.
 
-The prototype is being prepared as `v0.1.0-alpha`. It is experimental software, not a production database and not evidence that the proposed architecture is novel or resource-efficient.
+The current release is `v0.1.0-alpha`. It is experimental software, not a production database and not evidence that the proposed architecture is novel or resource-efficient.
 
 ## Why this exists
 
@@ -71,9 +73,9 @@ The intended contribution is presently a falsifiable design hypothesis and an in
 
 Use the metadata in [`CITATION.cff`](CITATION.cff):
 
-> Ryoko Sakakibara. *H2O Memory: TopoPhase Reference Prototype*. Independent Researcher. ORCID: [0009-0009-9544-6315](https://orcid.org/0009-0009-9544-6315).
+> Ryoko Sakakibara. *H2O Memory: TopoPhase Reference Prototype*. Version 0.1.0-alpha. Independent Researcher. [https://doi.org/10.5281/zenodo.22212460](https://doi.org/10.5281/zenodo.22212460). ORCID: [0009-0009-9544-6315](https://orcid.org/0009-0009-9544-6315).
 
-No paper DOI or software DOI has been assigned to this alpha candidate. Add one only after the corresponding record has been published.
+The DOI above identifies the archived software release. No paper DOI has been assigned.
 
 ## Licence
 
