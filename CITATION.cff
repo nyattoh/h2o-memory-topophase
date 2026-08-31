@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using the metadata in this file."
+type: software
+title: "H2O Memory: TopoPhase Reference Prototype"
+abstract: >-
+  A minimum falsifiable reference implementation for an AI memory architecture
+  hypothesis that separates epistemic formation from storage placement while
+  preserving identity, provenance, temporal validity, correction, deletion,
+  consent, uncertainty, and traceability.
+authors:
+  - family-names: Sakakibara
+    given-names: Ryoko
+    affiliation: Independent Researcher
+    orcid: "https://orcid.org/0009-0009-9544-6315"
+version: "0.1.0-alpha"
+license: Apache-2.0
+keywords:
+  - artificial intelligence
+  - long-term memory
+  - provenance
+  - epistemic phase
+  - memory architecture
