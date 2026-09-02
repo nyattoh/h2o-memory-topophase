@@ -1,0 +1,3565 @@
+{
+  "schema_version": "2.1.0",
+  "benchmark_id": "h2o-v0.8-contract",
+  "config_version": "1.0.0-preregistered",
+  "preregistration_commit": "dcac71fc6e0cf12aba8b0f524a238075592802ad",
+  "config_sha256": "102889a3045019919ad0f6b854164da5b42d956f6ddb942facdfc6c8fa947f8e",
+  "deterministic": true,
+  "overall_result": "FAIL",
+  "claim_boundary": "Synthetic contract conformance only; no claim of general utility, novelty, superiority, retrieval quality, multimodal benefit, token reduction, physical-memory reduction, or energy reduction.",
+  "conditions": [
+    {
+      "condition_id": "h2o_complete",
+      "removed_mechanism": null,
+      "adapter_implementation": "CompleteAdapter",
+      "contract_pass_count": 10,
+      "ordinary_control_pass_count": 6,
+      "ordinary_control_total": 6,
+      "stale_authority_count": 0,
+      "cross_axis_mutation_count": 0,
+      "public_disclosure_count": 0,
+      "trace_mismatch_count": 0,
+      "admissible": true,
+      "ordinary_controls": [
+        {
+          "control_id": "O01",
+          "passed": true,
+          "diagnostic": "current observation read and retrieval",
+          "operation_tape_hash": "604259b93f2b16d2195f82304bbd69024e758d43a4fccd2dbe0a3391f69c8809"
+        },
+        {
+          "control_id": "O02",
+          "passed": true,
+          "diagnostic": "pre-withdrawal retrieval, presentation, and trace",
+          "operation_tape_hash": "86ac3415cc054c51bc59154a15c6fc53d619cfe99491931a69a933bf6f54226e"
+        },
+        {
+          "control_id": "O03",
+          "passed": true,
+          "diagnostic": "two-fragment assembly and evidence-bearing crystallisation",
+          "operation_tape_hash": "ff0a9b48522fc5f1ea97a1d7280f76483b8c88932a66a99e0a0114a9f210eba5"
+        },
+        {
+          "control_id": "O04",
+          "passed": true,
+          "diagnostic": "normal storage movement and current-version restoration",
+          "operation_tape_hash": "2e1875c6a8fa26269a88212803eaff2875ddb5ca66a847a7eb004bb58b018b5f"
+        },
+        {
+          "control_id": "O05",
+          "passed": true,
+          "diagnostic": "pre-governance trace and audit",
+          "operation_tape_hash": "6af149314fd22a63be608c4eae4c84956c2d451cf9f9a1f7fbb404f4bdbe5689"
+        },
+        {
+          "control_id": "O06",
+          "passed": true,
+          "diagnostic": "ordinary non-verbal observation remained non-interpretive",
+          "operation_tape_hash": "11e97f355e647f2e9a953af6549e04b99f52098b6aa1029bae8c1f18eac194df"
+        }
+      ],
+      "contracts": [
+        {
+          "contract_id": "C01",
+          "passed": true,
+          "invariant_ids": [
+            "correction_lineage",
+            "restoration_and_re_presentation"
+          ],
+          "diagnostic": "old corrected value remained non-current",
+          "operation_tape_hash": "a8e196c46bd18a08e19cd1174997d75e41f5f1f9b8a48b03cdf338b7a7227dcd",
+          "operation_sequence": [
+            {
+              "step_id": "observe_address",
+              "operation": "OBSERVE",
+              "arguments_hash": "d8b06f2ffb9c59a3a16b26cb80dd7adcf3f9247e6eeae9d794e6d1f7a49eb88e"
+            },
+            {
+              "step_id": "move_address_cold",
+              "operation": "MOVE_TIER",
+              "arguments_hash": "8847b6e3754ef478c03d88821ebb105b748b3b7c4ceac31aceb7918bbcca4271"
+            },
+            {
+              "step_id": "correct_address",
+              "operation": "CORRECT",
+              "arguments_hash": "0d4f8965259d98888cb30890e2e7d338dbdb298d274345afe878cd4b0bc0f774"
+            },
+            {
+              "step_id": "restore_old_address",
+              "operation": "RESTORE",
+              "arguments_hash": "3caea8937f1685488eb16e0a76b905cc260ee8cfae0e15f4b7eba634f4d990aa"
+            },
+            {
+              "step_id": "read_address_after_old_restore",
+              "operation": "READ_OBSERVATION",
+              "arguments_hash": "673b53d0ef648acf2c4fabbbbc8c8556b1f26014ece2dd2a1b40f1ec6451ee25"
+            },
+            {
+              "step_id": "restore_current_address",
+              "operation": "RESTORE",
+              "arguments_hash": "0167edfaf1146c842efbc8a38b440e7bdc047d5fd188a457f886d868e8f55cbe"
+            },
+            {
+              "step_id": "read_address_current",
+              "operation": "READ_OBSERVATION",
+              "arguments_hash": "673b53d0ef648acf2c4fabbbbc8c8556b1f26014ece2dd2a1b40f1ec6451ee25"
+            },
+            {
+              "step_id": "read_address_v1",
+              "operation": "READ_OBSERVATION",
+              "arguments_hash": "86a9b2b4a23d35409752c99e4bb161b1ed92d5cf287dd7b378ab111cc5b8cdec"
+            }
+          ],
+          "stale_authority_count": 0,
+          "cross_axis_mutation_count": 0,
+          "public_disclosure_count": 0,
+          "trace_mismatch_count": 0,
+          "mechanism_trace": null,
+          "mechanism_events": [],
+          "causal_step_ids": [
+            "restore_old_address",
+            "read_address_after_old_restore"
+          ],
+          "causal_entity_ids": [
+            "obs_address"
+          ],
+          "evaluation_preconditions_met": true,
+          "public_surface_groups_evaluated": [],
+          "sentinels_evaluated": [],
+          "preforget_public_disclosures": [],
+          "public_disclosures": []
+        },
+        {
+          "contract_id": "C02",
+          "passed": true,
+          "invariant_ids": [
+            "deletion_and_consent",
+            "representation_loss_declaration"
+          ],
+          "diagnostic": "consent withdrawal blocked the materialised index and its trace",
+          "operation_tape_hash": "db6adb2620f16613d41429a8eb5b7e3855eb0a6edd5b7ab7e082bbca0e888822",
+          "operation_sequence": [
+            {
+              "step_id": "observe_private",
+              "operation": "OBSERVE",
+              "arguments_hash": "af512b7a2f84d0fb5559af2b9459619dcd1ce8447a8d28117f8251be0db97899"
+            },
+            {
+              "step_id": "retrieve_private_before",
+              "operation": "RETRIEVE",
+              "arguments_hash": "37b5a7106d16e250074527c8f03095327a4dc15d56af87696a82e061e15a3e12"
+            },
+            {
+              "step_id": "trace_private_before",
+              "operation": "TRACE_INDEX",
+              "arguments_hash": "3eae3b90492ea00693d58e505247fde6e043b3db996320df1094a7f011041bfd"
+            },
+            {
+              "step_id": "withdraw_private",
+              "operation": "WITHDRAW_CONSENT",
+              "arguments_hash": "0d0fb7c22538b9ee504f9b64dd03a983df7316a29d1dd9e850b5648b3b213178"
+            },
+            {
+              "step_id": "retrieve_private_after",
+              "operation": "RETRIEVE",
+              "arguments_hash": "37b5a7106d16e250074527c8f03095327a4dc15d56af87696a82e061e15a3e12"
+            },
+            {
+              "step_id": "trace_private_after",
+              "operation": "TRACE_INDEX",
+              "arguments_hash": "3eae3b90492ea00693d58e505247fde6e043b3db996320df1094a7f011041bfd"
+            }
+          ],
+          "stale_authority_count": 0,
+          "cross_axis_mutation_count": 0,
+          "public_disclosure_count": 0,
+          "trace_mismatch_count": 0,
+          "mechanism_trace": null,
+          "mechanism_events": [],
+          "causal_step_ids": [
+            "withdraw_private",
+            "retrieve_private_after",
+            "trace_private_after"
+          ],
+          "causal_entity_ids": [
+            "obs_private"
+          ],
+          "evaluation_preconditions_met": true,
+          "public_surface_groups_evaluated": [],
+          "sentinels_evaluated": [],
+          "preforget_public_disclosures": [],
+          "public_disclosures": []
+        },
+        {
+          "contract_id": "C03",
+          "passed": true,
+          "invariant_ids": [
+            "identity",
+            "temporal_validity"
+          ],
+          "diagnostic": "a delayed cue discovered and assembled both dispersed fragments",
+          "operation_tape_hash": "be1b52333f7c8452984b76e384e8faab011b91d2dc3033f14a10763d0de29c83",
+          "operation_sequence": [
+            {
+              "step_id": "observe_delayed_old",
+              "operation": "OBSERVE",
+              "arguments_hash": "639072de13ef234e778b40dc428fcb9d992829b2c550c011d220b6e7125db5c6"
+            },
+            {
+              "step_id": "observe_delayed_later",
+              "operation": "OBSERVE",
+              "arguments_hash": "e4f2128291884e754d7bc64bcf732d981b0a19e9d318aecaa6f7b24b8dc435fa"
+            },
+            {
+              "step_id": "assemble_delayed_by_cue",
+              "operation": "ASSEMBLE_BY_CUE",
+              "arguments_hash": "be38355a76e08e55e185cddf74ba586105317dabb562751fea72e4f512da88dd"
+            },
+            {
+              "step_id": "read_delayed_assembly",
+              "operation": "READ_ASSEMBLY",
+              "arguments_hash": "88bd577f4e0ba0836a03efec085e3e1e212c0457ef954847c7fa030b88db8c17"
+            },
+            {
+              "step_id": "read_delayed_old",
+              "operation": "READ_OBSERVATION",
+              "arguments_hash": "2686994622b3628ac2bab469811bf9e4e4bd27a8c7562c811df31f3fea773eb7"
+            },
+            {
+              "step_id": "read_delayed_later",
+              "operation": "READ_OBSERVATION",
+              "arguments_hash": "186f8089914ca53170095e2c4b9ca412a0dfe3944b70d91b5ed901adfcb23f93"
+            }
+          ],
+          "stale_authority_count": 0,
+          "cross_axis_mutation_count": 0,
+          "public_disclosure_count": 0,
+          "trace_mismatch_count": 0,
+          "mechanism_trace": null,
+          "mechanism_events": [],
+          "causal_step_ids": [
+            "observe_delayed_old",
+            "observe_delayed_later",
+            "assemble_delayed_by_cue",
+            "read_delayed_assembly",
+            "read_delayed_old",
+            "read_delayed_later"
+          ],
+          "causal_entity_ids": [],
+          "evaluation_preconditions_met": true,
+          "public_surface_groups_evaluated": [],
+          "sentinels_evaluated": [],
+          "preforget_public_disclosures": [],
+          "public_disclosures": []
+        },
+        {
+          "contract_id": "C04",
+          "passed": true,
+          "invariant_ids": [
+            "provenance",
+            "representation_loss_declaration"
+          ],
+          "diagnostic": "observed prosody remained distinct from an inferred emotion",
+          "operation_tape_hash": "ce8dd4b9d6e3f09366620ab54f3e001db340a38aadbba26a16c9ed12fe771124",
+          "operation_sequence": [
+            {
+              "step_id": "observe_voice_drop",
+              "operation": "OBSERVE",
+              "arguments_hash": "716b576eb7d79ab52b102632b414bb4cf6251bd6b1c3d304ab1e1491e79e4edf"
+            },
+            {
+              "step_id": "observe_voice_as_sad",
+              "operation": "OBSERVE",
+              "arguments_hash": "8ba49c0354c03d21577e67df56ee71e4083f0a2c68279cbda74bae094ed106e0"
+            }
+          ],
+          "stale_authority_count": 0,
+          "cross_axis_mutation_count": 0,
+          "public_disclosure_count": 0,
+          "trace_mismatch_count": 0,
+          "mechanism_trace": null,
+          "mechanism_events": [],
+          "causal_step_ids": [
+            "observe_voice_drop",
+            "observe_voice_as_sad"
+          ],
+          "causal_entity_ids": [],
+          "evaluation_preconditions_met": true,
+          "public_surface_groups_evaluated": [],
+          "sentinels_evaluated": [],
+          "preforget_public_disclosures": [],
+          "public_disclosures": []
+        },
+        {
+          "contract_id": "C05",
+          "passed": true,
+          "invariant_ids": [
+            "simultaneity_and_ordering",
+            "deletion_and_consent"
+          ],
+          "diagnostic": "low-frequency and low-similarity contradiction remained available",
+          "operation_tape_hash": "f8396875706af41bc0c2f0d1b1c3e315e2d1337829aa988e4708a7248961fa67",
+          "operation_sequence": [
+            {
+              "step_id": "observe_claim",
+              "operation": "OBSERVE",
+              "arguments_hash": "64d5d207f7222240161dca58d8307d9f3d957ae786ae1f28e0130bc22d749208"
+            },
+            {
+              "step_id": "observe_counter",
+              "operation": "OBSERVE",
+              "arguments_hash": "21a287c8f41f98e699f88b2700d35de327a83577ecb013e7d6ac5f5d1c3917cd"
+            },
+            {
+              "step_id": "relate_contradiction",
+              "operation": "RELATE",
+              "arguments_hash": "275bca62caebb24686c023a879ce731100c62853aadedff73596b368e60e8ea2"
+            },
+            {
+              "step_id": "prune_counter_frequency",
+              "operation": "CONSIDER_PRUNE",
+              "arguments_hash": "3d9dbbd151c10b0a17621a6f9370d8d319d13bd2dae5966e008a05078ee1a8c9"
+            },
+            {
+              "step_id": "prune_counter_similarity",
+              "operation": "CONSIDER_PRUNE",
+              "arguments_hash": "9b1a9ac945ee3785e25d298cda6f20afeffd508479600ca884a7cacaf992ac85"
+            },
+            {
+              "step_id": "read_counter",
+              "operation": "READ_OBSERVATION",
+              "arguments_hash": "8f5d4a405bb3e2943b2ef58f79860239993c5c76c2153f33a214caac7d7a02e7"
+            },
+            {
+              "step_id": "snapshot_counter",
+              "operation": "SNAPSHOT",
+              "arguments_hash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+            }
+          ],
+          "stale_authority_count": 0,
+          "cross_axis_mutation_count": 0,
+          "public_disclosure_count": 0,
+          "trace_mismatch_count": 0,
+          "mechanism_trace": null,
+          "mechanism_events": [],
+          "causal_step_ids": [
+            "observe_claim",
+            "observe_counter",
+            "relate_contradiction",
+            "prune_counter_frequency",
+            "prune_counter_similarity",
+            "read_counter",
+            "snapshot_counter"
+          ],
+          "causal_entity_ids": [],
+          "evaluation_preconditions_met": true,
+          "public_surface_groups_evaluated": [],
+          "sentinels_evaluated": [],
+          "preforget_public_disclosures": [],
+          "public_disclosures": []
+        },
+        {
+          "contract_id": "C06",
+          "passed": true,
+          "invariant_ids": [
+            "identity",
+            "restoration_and_re_presentation"
+          ],
+          "diagnostic": "storage-tier movement preserved epistemic phase",
+          "operation_tape_hash": "32b2551aa3fabf790f3426244ca564c11269a83402eb14b1e4373931201d7737",
+          "operation_sequence": [
+            {
+              "step_id": "observe_tier_phase",
+              "operation": "OBSERVE",
+              "arguments_hash": "fa4723f0d2d17c703e409b6f170a11a257ffb493227a9b178a69ef8942bafd7c"
+            },
+            {
+              "step_id": "read_tier_phase_initial",
+              "operation": "READ_OBSERVATION",
+              "arguments_hash": "69ae68c184c0d9463df0511241ebb1825af14592474bdfededd792d993e5389a"
+            },
+            {
+              "step_id": "move_tier_phase_warm",
+              "operation": "MOVE_TIER",
+              "arguments_hash": "cf4d361a3fde2d992922c58f59841eabba25c53ae3d742a6ee8a67b19e22959d"
+            },
+            {
+              "step_id": "read_tier_phase_warm",
+              "operation": "READ_OBSERVATION",
+              "arguments_hash": "69ae68c184c0d9463df0511241ebb1825af14592474bdfededd792d993e5389a"
+            },
+            {
+              "step_id": "move_tier_phase_cold",
+              "operation": "MOVE_TIER",
+              "arguments_hash": "a7cf7fdd5a209f8ab00c5f15371bdd9191bc6c12ce1cf997833aa88cb74b339b"
+            },
+            {
+              "step_id": "read_tier_phase_cold",
+              "operation": "READ_OBSERVATION",
+              "arguments_hash": "69ae68c184c0d9463df0511241ebb1825af14592474bdfededd792d993e5389a"
+            },
+            {
+              "step_id": "move_tier_phase_hot",
+              "operation": "MOVE_TIER",
+              "arguments_hash": "47f465eefee7a072a647d25c22e66918c062b6eb5bf715f89da2c9734b630cc0"
+            },
+            {
+              "step_id": "read_tier_phase_hot",
+              "operation": "READ_OBSERVATION",
+              "arguments_hash": "69ae68c184c0d9463df0511241ebb1825af14592474bdfededd792d993e5389a"
+            }
+          ],
+          "stale_authority_count": 0,
+          "cross_axis_mutation_count": 0,
+          "public_disclosure_count": 0,
+          "trace_mismatch_count": 0,
+          "mechanism_trace": null,
+          "mechanism_events": [],
+          "causal_step_ids": [
+            "move_tier_phase_warm",
+            "move_tier_phase_cold",
+            "move_tier_phase_hot"
+          ],
+          "causal_entity_ids": [
+            "obs_tier_phase"
+          ],
+          "evaluation_preconditions_met": true,
+          "public_surface_groups_evaluated": [],
+          "sentinels_evaluated": [],
+          "preforget_public_disclosures": [],
+          "public_disclosures": []
+        },
+        {
+          "contract_id": "C07",
+          "passed": true,
+          "invariant_ids": [
+            "identity",
+            "representation_loss_declaration"
+          ],
+          "diagnostic": "epistemic operations preserved canonical payload and storage tier",
+          "operation_tape_hash": "38a322812c71f08ad544d3f2a455aed8ca73fbc5067911c05802d24397a2289e",
+          "operation_sequence": [
+            {
+              "step_id": "observe_phase_ops",
+              "operation": "OBSERVE",
+              "arguments_hash": "3054436f0944fc799c9e1148cdbd85cb652c30f26cf77dc1c13d0ba278e0b54d"
+            },
+            {
+              "step_id": "move_phase_ops_warm",
+              "operation": "MOVE_TIER",
+              "arguments_hash": "9033a9efe9cf5bc31f7460940866d13d909033a61a3cf931e39661a435c6c12a"
+            },
+            {
+              "step_id": "read_phase_ops_baseline",
+              "operation": "READ_OBSERVATION",
+              "arguments_hash": "d045ab07fda4aa1d5caa0613777f7e2b953451c3108e15042c2b3c49d584bc43"
+            },
+            {
+              "step_id": "assemble_phase_ops",
+              "operation": "ASSEMBLE",
+              "arguments_hash": "03d5b2623d2bbc7724a88f54e6b485cf3804c42872f12e63ffdee4991878b226"
+            },
+            {
+              "step_id": "read_phase_ops_assembled",
+              "operation": "READ_OBSERVATION",
+              "arguments_hash": "d045ab07fda4aa1d5caa0613777f7e2b953451c3108e15042c2b3c49d584bc43"
+            },
+            {
+              "step_id": "crystallize_phase_ops",
+              "operation": "CRYSTALLIZE",
+              "arguments_hash": "104ea6c50fd30ec9c0c1d8b8b32b398104c52f15c6ce78a6464a2e21852c1c9a"
+            },
+            {
+              "step_id": "read_phase_ops_crystallized",
+              "operation": "READ_OBSERVATION",
+              "arguments_hash": "d045ab07fda4aa1d5caa0613777f7e2b953451c3108e15042c2b3c49d584bc43"
+            },
+            {
+              "step_id": "reopen_phase_ops",
+              "operation": "REOPEN",
+              "arguments_hash": "a3543f602004d83c82499036624ca5daac5dce435782717fbac8fc5bcc2c1b2d"
+            },
+            {
+              "step_id": "read_phase_ops_reopened",
+              "operation": "READ_OBSERVATION",
+              "arguments_hash": "d045ab07fda4aa1d5caa0613777f7e2b953451c3108e15042c2b3c49d584bc43"
+            }
+          ],
+          "stale_authority_count": 0,
+          "cross_axis_mutation_count": 0,
+          "public_disclosure_count": 0,
+          "trace_mismatch_count": 0,
+          "mechanism_trace": null,
+          "mechanism_events": [],
+          "causal_step_ids": [
+            "assemble_phase_ops",
+            "crystallize_phase_ops",
+            "reopen_phase_ops"
+          ],
+          "causal_entity_ids": [
+            "obs_phase_ops",
+            "asm_phase_ops",
+            "ins_phase_ops"
+          ],
+          "evaluation_preconditions_met": true,
+          "public_surface_groups_evaluated": [],
+          "sentinels_evaluated": [],
+          "preforget_public_disclosures": [],
+          "public_disclosures": []
+        },
+        {
+          "contract_id": "C08",
+          "passed": true,
+          "invariant_ids": [
+            "identity",
+            "correction_lineage"
+          ],
+          "diagnostic": "forced failure left canonical, phase, and audit state unchanged",
+          "operation_tape_hash": "9c4ac84c1c9e97879bcdc08c3b72d40b27719c77ee8dbca29fe076f77fe3f3e4",
+          "operation_sequence": [
+            {
+              "step_id": "observe_atomic",
+              "operation": "OBSERVE",
+              "arguments_hash": "eee5e43f7e3821c83bdedfd48ff6dd2d046a91eaa3beb47810a997f7766e8af2"
+            },
+            {
+              "step_id": "assemble_atomic",
+              "operation": "ASSEMBLE",
+              "arguments_hash": "6e2acabcab0384ce4da340e5bdd2c7264a9a62e8f5bfc32e8db74a20eba1800c"
+            },
+            {
+              "step_id": "snapshot_atomic_before",
+              "operation": "SNAPSHOT",
+              "arguments_hash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+            },
+            {
+              "step_id": "audit_atomic_before",
+              "operation": "AUDIT",
+              "arguments_hash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+            },
+            {
+              "step_id": "inject_atomic_failure",
+              "operation": "INJECT_FAILURE",
+              "arguments_hash": "75cafad32697459715101519cf75ea4973fe077ff24b3baa1f5a0e2e9cb4f829"
+            },
+            {
+              "step_id": "correct_atomic",
+              "operation": "CORRECT",
+              "arguments_hash": "5e881c094d30b81d63128351ecaec3baa62e48b12ad92ad6952a605cfacc7366"
+            },
+            {
+              "step_id": "snapshot_atomic_after",
+              "operation": "SNAPSHOT",
+              "arguments_hash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+            },
+            {
+              "step_id": "audit_atomic_after",
+              "operation": "AUDIT",
+              "arguments_hash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+            }
+          ],
+          "stale_authority_count": 0,
+          "cross_axis_mutation_count": 0,
+          "public_disclosure_count": 0,
+          "trace_mismatch_count": 0,
+          "mechanism_trace": null,
+          "mechanism_events": [],
+          "causal_step_ids": [
+            "observe_atomic",
+            "assemble_atomic",
+            "snapshot_atomic_before",
+            "audit_atomic_before",
+            "inject_atomic_failure",
+            "correct_atomic",
+            "snapshot_atomic_after",
+            "audit_atomic_after"
+          ],
+          "causal_entity_ids": [],
+          "evaluation_preconditions_met": true,
+          "public_surface_groups_evaluated": [],
+          "sentinels_evaluated": [],
+          "preforget_public_disclosures": [],
+          "public_disclosures": []
+        },
+        {
+          "contract_id": "C09",
+          "passed": true,
+          "invariant_ids": [
+            "restoration_and_re_presentation",
+            "provenance"
+          ],
+          "diagnostic": "user rejection blocked reopening and semantic recreation",
+          "operation_tape_hash": "b538de1693f85484cb3fdd121c062c99a46acbec805b7eb59c83d76b03933de0",
+          "operation_sequence": [
+            {
+              "step_id": "observe_reject_evidence",
+              "operation": "OBSERVE",
+              "arguments_hash": "8e7a665d526b9f1af013cdf2cb49631e44c31a772b0371e0bcc53d84ca046684"
+            },
+            {
+              "step_id": "assemble_reject",
+              "operation": "ASSEMBLE",
+              "arguments_hash": "b60bf728e1f626869972db573e6af816d3ee3245d4342a8b17a0b47006d80495"
+            },
+            {
+              "step_id": "crystallize_reject_original",
+              "operation": "CRYSTALLIZE",
+              "arguments_hash": "dcedd51f3a1414a7e1cc94083a78ca392e5863922b1ee325fbfa9c18409a05ce"
+            },
+            {
+              "step_id": "observe_rejection",
+              "operation": "OBSERVE",
+              "arguments_hash": "a253e5c01e4facdcbe2406e662fa5991f1266d6ff016c65c27e725eaebf5233d"
+            },
+            {
+              "step_id": "reject_insight",
+              "operation": "REJECT",
+              "arguments_hash": "4d4df2249c8c7c5e3916d2b17a8c108d7017b654c8ee4b1736f7a221c9054756"
+            },
+            {
+              "step_id": "reopen_rejected",
+              "operation": "REOPEN",
+              "arguments_hash": "a6228ae6543db3e1aa987ebada2e2334200aa45a4443cdf1013159e5d64a8955"
+            },
+            {
+              "step_id": "recreate_rejected",
+              "operation": "CRYSTALLIZE",
+              "arguments_hash": "aa654daf966fe559690ebfd95a3632ba9bf3037a998758fa24ee8efa367a6a57"
+            }
+          ],
+          "stale_authority_count": 0,
+          "cross_axis_mutation_count": 0,
+          "public_disclosure_count": 0,
+          "trace_mismatch_count": 0,
+          "mechanism_trace": null,
+          "mechanism_events": [],
+          "causal_step_ids": [
+            "reject_insight",
+            "reopen_rejected",
+            "recreate_rejected"
+          ],
+          "causal_entity_ids": [
+            "ins_reject",
+            "ins_reject_recreated"
+          ],
+          "evaluation_preconditions_met": true,
+          "public_surface_groups_evaluated": [],
+          "sentinels_evaluated": [],
+          "preforget_public_disclosures": [],
+          "public_disclosures": []
+        },
+        {
+          "contract_id": "C10",
+          "passed": true,
+          "invariant_ids": [
+            "deletion_and_consent",
+            "provenance",
+            "restoration_and_re_presentation"
+          ],
+          "diagnostic": "forgotten text was absent from every enumerated public surface",
+          "operation_tape_hash": "5d2b3eb209073e4cd2562e46183976b8dcbd91b226a380d136c1cd7bdf7c44f6",
+          "operation_sequence": [
+            {
+              "step_id": "observe_secret",
+              "operation": "OBSERVE",
+              "arguments_hash": "3781a68ae5cf07ee52bd15a0fff1d24ac9200e1fc8f263d40b779a1e6c413979"
+            },
+            {
+              "step_id": "observe_secret_peer",
+              "operation": "OBSERVE",
+              "arguments_hash": "cfc80a9f67559e0e03a9f55acb770926affea26bdd4c817b7a97c0d99fe63503"
+            },
+            {
+              "step_id": "relate_secret",
+              "operation": "RELATE",
+              "arguments_hash": "35c41ea4c46a800a05c511f45d596d28c89ac95bff0a4b90b420438a3ce499f9"
+            },
+            {
+              "step_id": "assemble_secret",
+              "operation": "ASSEMBLE",
+              "arguments_hash": "d6f44034ccba9a251fd1199ba4dd0e46aa721810f43cf15065a410a1717c2dc1"
+            },
+            {
+              "step_id": "crystallize_secret",
+              "operation": "CRYSTALLIZE",
+              "arguments_hash": "6fbc200c328ce7fc4f0e885797bffa73d694d0f73611500da0d988a33b18a005"
+            },
+            {
+              "step_id": "materialise_secret_surfaces",
+              "operation": "MATERIALISE_PUBLIC_SURFACES",
+              "arguments_hash": "c5fa6fd26abe27c9466ad4795d4342a6e50a3a83e1705a10da083fddd00691b1"
+            },
+            {
+              "step_id": "read_secret_surfaces_before",
+              "operation": "READ_PUBLIC_SURFACES",
+              "arguments_hash": "c5fa6fd26abe27c9466ad4795d4342a6e50a3a83e1705a10da083fddd00691b1"
+            },
+            {
+              "step_id": "forget_secret",
+              "operation": "FORGET",
+              "arguments_hash": "15a63b44381643166fe1cda3936c102e262c3cba0bdb2aa3bf4643fddb14b9e8"
+            },
+            {
+              "step_id": "read_secret_surfaces",
+              "operation": "READ_PUBLIC_SURFACES",
+              "arguments_hash": "c5fa6fd26abe27c9466ad4795d4342a6e50a3a83e1705a10da083fddd00691b1"
+            }
+          ],
+          "stale_authority_count": 0,
+          "cross_axis_mutation_count": 0,
+          "public_disclosure_count": 0,
+          "trace_mismatch_count": 0,
+          "mechanism_trace": null,
+          "mechanism_events": [],
+          "causal_step_ids": [
+            "forget_secret",
+            "read_secret_surfaces"
+          ],
+          "causal_entity_ids": [
+            "obs_secret",
+            "asm_secret",
+            "ins_secret"
+          ],
+          "evaluation_preconditions_met": true,
+          "public_surface_groups_evaluated": [
+            "public_snapshot",
+            "audit",
+            "observations",
+            "relations",
+            "assemblies",
+            "insights",
+            "derived_views",
+            "tokens",
+            "retrieval",
+            "traces"
+          ],
+          "sentinels_evaluated": [
+            "payloadsecret9x",
+            "speakersecret8v",
+            "observersecret7k",
+            "sourcesecret6m",
+            "relationsecret5q",
+            "cuesecret4r",
+            "insightsecret3t",
+            "uncertaintysecret2w",
+            "falsifiersecret1z"
+          ],
+          "preforget_public_disclosures": [
+            {
+              "surface_group": "public_snapshot",
+              "sentinel": "payloadsecret9x"
+            },
+            {
+              "surface_group": "public_snapshot",
+              "sentinel": "speakersecret8v"
+            },
+            {
+              "surface_group": "public_snapshot",
+              "sentinel": "observersecret7k"
+            },
+            {
+              "surface_group": "public_snapshot",
+              "sentinel": "sourcesecret6m"
+            },
+            {
+              "surface_group": "public_snapshot",
+              "sentinel": "relationsecret5q"
+            },
+            {
+              "surface_group": "public_snapshot",
+              "sentinel": "cuesecret4r"
+            },
+            {
+              "surface_group": "public_snapshot",
+              "sentinel": "insightsecret3t"
+            },
+            {
+              "surface_group": "public_snapshot",
+              "sentinel": "uncertaintysecret2w"
+            },
+            {
+              "surface_group": "public_snapshot",
+              "sentinel": "falsifiersecret1z"
+            },
+            {
+              "surface_group": "observations",
+              "sentinel": "payloadsecret9x"
+            },
+            {
+              "surface_group": "observations",
+              "sentinel": "speakersecret8v"
+            },
+            {
+              "surface_group": "observations",
+              "sentinel": "observersecret7k"
+            },
+            {
+              "surface_group": "observations",
+              "sentinel": "sourcesecret6m"
+            },
+            {
+              "surface_group": "relations",
+              "sentinel": "relationsecret5q"
+            },
+            {
+              "surface_group": "relations",
+              "sentinel": "cuesecret4r"
+            },
+            {
+              "surface_group": "assemblies",
+              "sentinel": "cuesecret4r"
+            },
+            {
+              "surface_group": "insights",
+              "sentinel": "insightsecret3t"
+            },
+            {
+              "surface_group": "insights",
+              "sentinel": "uncertaintysecret2w"
+            },
+            {
+              "surface_group": "insights",
+              "sentinel": "falsifiersecret1z"
+            },
+            {
+              "surface_group": "derived_views",
+              "sentinel": "payloadsecret9x"
+            },
+            {
+              "surface_group": "tokens",
+              "sentinel": "payloadsecret9x"
+            },
+            {
+              "surface_group": "traces",
+              "sentinel": "payloadsecret9x"
+            },
+            {
+              "surface_group": "traces",
+              "sentinel": "speakersecret8v"
+            },
+            {
+              "surface_group": "traces",
+              "sentinel": "observersecret7k"
+            },
+            {
+              "surface_group": "traces",
+              "sentinel": "sourcesecret6m"
+            },
+            {
+              "surface_group": "traces",
+              "sentinel": "uncertaintysecret2w"
+            }
+          ],
+          "public_disclosures": []
+        }
+      ]
+    },
+    {
+      "condition_id": "derived_authority",
+      "removed_mechanism": "canonical_source_authority",
+      "adapter_implementation": "DerivedAuthorityAdapter",
+      "contract_pass_count": 8,
+      "ordinary_control_pass_count": 6,
+      "ordinary_control_total": 6,
+      "stale_authority_count": 5,
+      "cross_axis_mutation_count": 0,
+      "public_disclosure_count": 0,
+      "trace_mismatch_count": 0,
+      "admissible": true,
+      "ordinary_controls": [
+        {
+          "control_id": "O01",
+          "passed": true,
+          "diagnostic": "current observation read and retrieval",
+          "operation_tape_hash": "604259b93f2b16d2195f82304bbd69024e758d43a4fccd2dbe0a3391f69c8809"
+        },
+        {
+          "control_id": "O02",
+          "passed": true,
+          "diagnostic": "pre-withdrawal retrieval, presentation, and trace",
+          "operation_tape_hash": "86ac3415cc054c51bc59154a15c6fc53d619cfe99491931a69a933bf6f54226e"
+        },
+        {
+          "control_id": "O03",
+          "passed": true,
+          "diagnostic": "two-fragment assembly and evidence-bearing crystallisation",
+          "operation_tape_hash": "ff0a9b48522fc5f1ea97a1d7280f76483b8c88932a66a99e0a0114a9f210eba5"
+        },
+        {
+          "control_id": "O04",
+          "passed": true,
+          "diagnostic": "normal storage movement and current-version restoration",
+          "operation_tape_hash": "2e1875c6a8fa26269a88212803eaff2875ddb5ca66a847a7eb004bb58b018b5f"
+        },
+        {
+          "control_id": "O05",
+          "passed": true,
+          "diagnostic": "pre-governance trace and audit",
+          "operation_tape_hash": "6af149314fd22a63be608c4eae4c84956c2d451cf9f9a1f7fbb404f4bdbe5689"
+        },
+        {
+          "control_id": "O06",
+          "passed": true,
+          "diagnostic": "ordinary non-verbal observation remained non-interpretive",
+          "operation_tape_hash": "11e97f355e647f2e9a953af6549e04b99f52098b6aa1029bae8c1f18eac194df"
+        }
+      ],
+      "contracts": [
+        {
+          "contract_id": "C01",
+          "passed": false,
+          "invariant_ids": [
+            "correction_lineage",
+            "restoration_and_re_presentation"
+          ],
+          "diagnostic": "an old representation became current or correction lineage was lost",
+          "operation_tape_hash": "a8e196c46bd18a08e19cd1174997d75e41f5f1f9b8a48b03cdf338b7a7227dcd",
+          "operation_sequence": [
+            {
+              "step_id": "observe_address",
+              "operation": "OBSERVE",
+              "arguments_hash": "d8b06f2ffb9c59a3a16b26cb80dd7adcf3f9247e6eeae9d794e6d1f7a49eb88e"
+            },
+            {
+              "step_id": "move_address_cold",
+              "operation": "MOVE_TIER",
+              "arguments_hash": "8847b6e3754ef478c03d88821ebb105b748b3b7c4ceac31aceb7918bbcca4271"
+            },
+            {
+              "step_id": "correct_address",
+              "operation": "CORRECT",
+              "arguments_hash": "0d4f8965259d98888cb30890e2e7d338dbdb298d274345afe878cd4b0bc0f774"
+            },
+            {
+              "step_id": "restore_old_address",
+              "operation": "RESTORE",
+              "arguments_hash": "3caea8937f1685488eb16e0a76b905cc260ee8cfae0e15f4b7eba634f4d990aa"
+            },
+            {
+              "step_id": "read_address_after_old_restore",
+              "operation": "READ_OBSERVATION",
+              "arguments_hash": "673b53d0ef648acf2c4fabbbbc8c8556b1f26014ece2dd2a1b40f1ec6451ee25"
+            },
+            {
+              "step_id": "restore_current_address",
+              "operation": "RESTORE",
+              "arguments_hash": "0167edfaf1146c842efbc8a38b440e7bdc047d5fd188a457f886d868e8f55cbe"
+            },
+            {
+              "step_id": "read_address_current",
+              "operation": "READ_OBSERVATION",
+              "arguments_hash": "673b53d0ef648acf2c4fabbbbc8c8556b1f26014ece2dd2a1b40f1ec6451ee25"
+            },
+            {
+              "step_id": "read_address_v1",
+              "operation": "READ_OBSERVATION",
+              "arguments_hash": "86a9b2b4a23d35409752c99e4bb161b1ed92d5cf287dd7b378ab111cc5b8cdec"
+            }
+          ],
+          "stale_authority_count": 1,
+          "cross_axis_mutation_count": 0,
+          "public_disclosure_count": 0,
+          "trace_mismatch_count": 0,
+          "mechanism_trace": "canonical_source_authority",
+          "mechanism_events": [
+            {
+              "step_id": "restore_old_address",
+              "kind": "derived_view_used_as_authority",
+              "mechanism": "canonical_source_authority",
+              "entity_ids": [
+                "obs_address",
+                "v1"
+              ],
+              "detail": "RESTORE resolved the materialised representation without consulting current canonical authority"
+            }
+          ],
+          "causal_step_ids": [
+            "restore_old_address",
+            "read_address_after_old_restore"
+          ],
+          "causal_entity_ids": [
+            "obs_address"
+          ],
+          "evaluation_preconditions_met": true,
+          "public_surface_groups_evaluated": [],
+          "sentinels_evaluated": [],
+          "preforget_public_disclosures": [],
+          "public_disclosures": []
+        },
+        {
+          "contract_id": "C02",
+          "passed": false,
+          "invariant_ids": [
+            "deletion_and_consent",
+            "representation_loss_declaration"
+          ],
+          "diagnostic": "a materialised index remained usable after consent withdrawal",
+          "operation_tape_hash": "db6adb2620f16613d41429a8eb5b7e3855eb0a6edd5b7ab7e082bbca0e888822",
+          "operation_sequence": [
+            {
+              "step_id": "observe_private",
+              "operation": "OBSERVE",
+              "arguments_hash": "af512b7a2f84d0fb5559af2b9459619dcd1ce8447a8d28117f8251be0db97899"
+            },
+            {
+              "step_id": "retrieve_private_before",
+              "operation": "RETRIEVE",
+              "arguments_hash": "37b5a7106d16e250074527c8f03095327a4dc15d56af87696a82e061e15a3e12"
+            },
+            {
+              "step_id": "trace_private_before",
+              "operation": "TRACE_INDEX",
+              "arguments_hash": "3eae3b90492ea00693d58e505247fde6e043b3db996320df1094a7f011041bfd"
+            },
+            {
+              "step_id": "withdraw_private",
+              "operation": "WITHDRAW_CONSENT",
+              "arguments_hash": "0d0fb7c22538b9ee504f9b64dd03a983df7316a29d1dd9e850b5648b3b213178"
+            },
+            {
+              "step_id": "retrieve_private_after",
+              "operation": "RETRIEVE",
+              "arguments_hash": "37b5a7106d16e250074527c8f03095327a4dc15d56af87696a82e061e15a3e12"
+            },
+            {
+              "step_id": "trace_private_after",
+              "operation": "TRACE_INDEX",
+              "arguments_hash": "3eae3b90492ea00693d58e505247fde6e043b3db996320df1094a7f011041bfd"
+            }
+          ],
+          "stale_authority_count": 2,
+          "cross_axis_mutation_count": 0,
+          "public_disclosure_count": 0,
+          "trace_mismatch_count": 0,
+          "mechanism_trace": "canonical_source_authority",
+          "mechanism_events": [
+            {
+              "step_id": "retrieve_private_after",
+              "kind": "derived_view_used_as_authority",
+              "mechanism": "canonical_source_authority",
+              "entity_ids": [
+                "obs_private",
+                "view_search_index_obs_private_v1"
+              ],
+              "detail": "retrieve resolved a materialised index using copied consent state"
+            },
+            {
+              "step_id": "trace_private_after",
+              "kind": "derived_view_used_as_authority",
+              "mechanism": "canonical_source_authority",
+              "entity_ids": [
+                "obs_private",
+                "view_search_index_obs_private_v1"
+              ],
+              "detail": "TRACE resolved the materialised index and its copied governance state"
+            }
+          ],
+          "causal_step_ids": [
+            "withdraw_private",
+            "retrieve_private_after",
+            "trace_private_after"
+          ],
+          "causal_entity_ids": [
+            "obs_private"
+          ],
+          "evaluation_preconditions_met": true,
+          "public_surface_groups_evaluated": [],
+          "sentinels_evaluated": [],
+          "preforget_public_disclosures": [],
+          "public_disclosures": []
+        },
+        {
+          "contract_id": "C03",
+          "passed": true,
+          "invariant_ids": [
+            "identity",
+            "temporal_validity"
+          ],
+          "diagnostic": "a delayed cue discovered and assembled both dispersed fragments",
+          "operation_tape_hash": "be1b52333f7c8452984b76e384e8faab011b91d2dc3033f14a10763d0de29c83",
+          "operation_sequence": [
+            {
+              "step_id": "observe_delayed_old",
+              "operation": "OBSERVE",
+              "arguments_hash": "639072de13ef234e778b40dc428fcb9d992829b2c550c011d220b6e7125db5c6"
+            },
+            {
+              "step_id": "observe_delayed_later",
+              "operation": "OBSERVE",
+              "arguments_hash": "e4f2128291884e754d7bc64bcf732d981b0a19e9d318aecaa6f7b24b8dc435fa"
+            },
+            {
+              "step_id": "assemble_delayed_by_cue",
+              "operation": "ASSEMBLE_BY_CUE",
+              "arguments_hash": "be38355a76e08e55e185cddf74ba586105317dabb562751fea72e4f512da88dd"
+            },
+            {
+              "step_id": "read_delayed_assembly",
+              "operation": "READ_ASSEMBLY",
+              "arguments_hash": "88bd577f4e0ba0836a03efec085e3e1e212c0457ef954847c7fa030b88db8c17"
+            },
+            {
+              "step_id": "read_delayed_old",
+              "operation": "READ_OBSERVATION",
+              "arguments_hash": "2686994622b3628ac2bab469811bf9e4e4bd27a8c7562c811df31f3fea773eb7"
+            },
+            {
+              "step_id": "read_delayed_later",
+              "operation": "READ_OBSERVATION",
+              "arguments_hash": "186f8089914ca53170095e2c4b9ca412a0dfe3944b70d91b5ed901adfcb23f93"
+            }
+          ],
+          "stale_authority_count": 2,
+          "cross_axis_mutation_count": 0,
+          "public_disclosure_count": 0,
+          "trace_mismatch_count": 0,
+          "mechanism_trace": null,
+          "mechanism_events": [
+            {
+              "step_id": "assemble_delayed_by_cue",
+              "kind": "derived_view_used_as_authority",
+              "mechanism": "canonical_source_authority",
+              "entity_ids": [
+                "obs_old",
+                "view_search_index_obs_old_v1"
+              ],
+              "detail": "retrieve resolved a materialised index using copied consent state"
+            },
+            {
+              "step_id": "assemble_delayed_by_cue",
+              "kind": "derived_view_used_as_authority",
+              "mechanism": "canonical_source_authority",
+              "entity_ids": [
+                "obs_later",
+                "view_search_index_obs_later_v1"
+              ],
+              "detail": "retrieve resolved a materialised index using copied consent state"
+            }
+          ],
+          "causal_step_ids": [
+            "observe_delayed_old",
+            "observe_delayed_later",
+            "assemble_delayed_by_cue",
+            "read_delayed_assembly",
+            "read_delayed_old",
+            "read_delayed_later"
+          ],
+          "causal_entity_ids": [],
+          "evaluation_preconditions_met": true,
+          "public_surface_groups_evaluated": [],
+          "sentinels_evaluated": [],
+          "preforget_public_disclosures": [],
+          "public_disclosures": []
+        },
+        {
+          "contract_id": "C04",
+          "passed": true,
+          "invariant_ids": [
+            "provenance",
+            "representation_loss_declaration"
+          ],
+          "diagnostic": "observed prosody remained distinct from an inferred emotion",
+          "operation_tape_hash": "ce8dd4b9d6e3f09366620ab54f3e001db340a38aadbba26a16c9ed12fe771124",
+          "operation_sequence": [
+            {
+              "step_id": "observe_voice_drop",
+              "operation": "OBSERVE",
+              "arguments_hash": "716b576eb7d79ab52b102632b414bb4cf6251bd6b1c3d304ab1e1491e79e4edf"
+            },
+            {
+              "step_id": "observe_voice_as_sad",
+              "operation": "OBSERVE",
+              "arguments_hash": "8ba49c0354c03d21577e67df56ee71e4083f0a2c68279cbda74bae094ed106e0"
+            }
+          ],
+          "stale_authority_count": 0,
+          "cross_axis_mutation_count": 0,
+          "public_disclosure_count": 0,
+          "trace_mismatch_count": 0,
+          "mechanism_trace": null,
+          "mechanism_events": [],
+          "causal_step_ids": [
+            "observe_voice_drop",
+            "observe_voice_as_sad"
+          ],
+          "causal_entity_ids": [],
+          "evaluation_preconditions_met": true,
+          "public_surface_groups_evaluated": [],
+          "sentinels_evaluated": [],
+          "preforget_public_disclosures": [],
+          "public_disclosures": []
+        },
+        {
+          "contract_id": "C05",
+          "passed": true,
+          "invariant_ids": [
+            "simultaneity_and_ordering",
+            "deletion_and_consent"
+          ],
+          "diagnostic": "low-frequency and low-similarity contradiction remained available",
+          "operation_tape_hash": "f8396875706af41bc0c2f0d1b1c3e315e2d1337829aa988e4708a7248961fa67",
+          "operation_sequence": [
+            {
+              "step_id": "observe_claim",
+              "operation": "OBSERVE",
+              "arguments_hash": "64d5d207f7222240161dca58d8307d9f3d957ae786ae1f28e0130bc22d749208"
+            },
+            {
+              "step_id": "observe_counter",
+              "operation": "OBSERVE",
+              "arguments_hash": "21a287c8f41f98e699f88b2700d35de327a83577ecb013e7d6ac5f5d1c3917cd"
+            },
+            {
+              "step_id": "relate_contradiction",
+              "operation": "RELATE",
+              "arguments_hash": "275bca62caebb24686c023a879ce731100c62853aadedff73596b368e60e8ea2"
+            },
+            {
+              "step_id": "prune_counter_frequency",
+              "operation": "CONSIDER_PRUNE",
+              "arguments_hash": "3d9dbbd151c10b0a17621a6f9370d8d319d13bd2dae5966e008a05078ee1a8c9"
+            },
+            {
+              "step_id": "prune_counter_similarity",
+              "operation": "CONSIDER_PRUNE",
+              "arguments_hash": "9b1a9ac945ee3785e25d298cda6f20afeffd508479600ca884a7cacaf992ac85"
+            },
+            {
+              "step_id": "read_counter",
+              "operation": "READ_OBSERVATION",
+              "arguments_hash": "8f5d4a405bb3e2943b2ef58f79860239993c5c76c2153f33a214caac7d7a02e7"
+            },
+            {
+              "step_id": "snapshot_counter",
+              "operation": "SNAPSHOT",
+              "arguments_hash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+            }
+          ],
+          "stale_authority_count": 0,
+          "cross_axis_mutation_count": 0,
+          "public_disclosure_count": 0,
+          "trace_mismatch_count": 0,
+          "mechanism_trace": null,
+          "mechanism_events": [],
+          "causal_step_ids": [
+            "observe_claim",
+            "observe_counter",
+            "relate_contradiction",
+            "prune_counter_frequency",
+            "prune_counter_similarity",
+            "read_counter",
+            "snapshot_counter"
+          ],
+          "causal_entity_ids": [],
+          "evaluation_preconditions_met": true,
+          "public_surface_groups_evaluated": [],
+          "sentinels_evaluated": [],
+          "preforget_public_disclosures": [],
+          "public_disclosures": []
+        },
+        {
+          "contract_id": "C06",
+          "passed": true,
+          "invariant_ids": [
+            "identity",
+            "restoration_and_re_presentation"
+          ],
+          "diagnostic": "storage-tier movement preserved epistemic phase",
+          "operation_tape_hash": "32b2551aa3fabf790f3426244ca564c11269a83402eb14b1e4373931201d7737",
+          "operation_sequence": [
+            {
+              "step_id": "observe_tier_phase",
+              "operation": "OBSERVE",
+              "arguments_hash": "fa4723f0d2d17c703e409b6f170a11a257ffb493227a9b178a69ef8942bafd7c"
+            },
+            {
+              "step_id": "read_tier_phase_initial",
+              "operation": "READ_OBSERVATION",
+              "arguments_hash": "69ae68c184c0d9463df0511241ebb1825af14592474bdfededd792d993e5389a"
+            },
+            {
+              "step_id": "move_tier_phase_warm",
+              "operation": "MOVE_TIER",
+              "arguments_hash": "cf4d361a3fde2d992922c58f59841eabba25c53ae3d742a6ee8a67b19e22959d"
+            },
+            {
+              "step_id": "read_tier_phase_warm",
+              "operation": "READ_OBSERVATION",
+              "arguments_hash": "69ae68c184c0d9463df0511241ebb1825af14592474bdfededd792d993e5389a"
+            },
+            {
+              "step_id": "move_tier_phase_cold",
+              "operation": "MOVE_TIER",
+              "arguments_hash": "a7cf7fdd5a209f8ab00c5f15371bdd9191bc6c12ce1cf997833aa88cb74b339b"
+            },
+            {
+              "step_id": "read_tier_phase_cold",
+              "operation": "READ_OBSERVATION",
+              "arguments_hash": "69ae68c184c0d9463df0511241ebb1825af14592474bdfededd792d993e5389a"
+            },
+            {
+              "step_id": "move_tier_phase_hot",
+              "operation": "MOVE_TIER",
+              "arguments_hash": "47f465eefee7a072a647d25c22e66918c062b6eb5bf715f89da2c9734b630cc0"
+            },
+            {
+              "step_id": "read_tier_phase_hot",
+              "operation": "READ_OBSERVATION",
+              "arguments_hash": "69ae68c184c0d9463df0511241ebb1825af14592474bdfededd792d993e5389a"
+            }
+          ],
+          "stale_authority_count": 0,
+          "cross_axis_mutation_count": 0,
+          "public_disclosure_count": 0,
+          "trace_mismatch_count": 0,
+          "mechanism_trace": null,
+          "mechanism_events": [],
+          "causal_step_ids": [
+            "move_tier_phase_warm",
+            "move_tier_phase_cold",
+            "move_tier_phase_hot"
+          ],
+          "causal_entity_ids": [
+            "obs_tier_phase"
+          ],
+          "evaluation_preconditions_met": true,
+          "public_surface_groups_evaluated": [],
+          "sentinels_evaluated": [],
+          "preforget_public_disclosures": [],
+          "public_disclosures": []
+        },
+        {
+          "contract_id": "C07",
+          "passed": true,
+          "invariant_ids": [
+            "identity",
+            "representation_loss_declaration"
+          ],
+          "diagnostic": "epistemic operations preserved canonical payload and storage tier",
+          "operation_tape_hash": "38a322812c71f08ad544d3f2a455aed8ca73fbc5067911c05802d24397a2289e",
+          "operation_sequence": [
+            {
+              "step_id": "observe_phase_ops",
+              "operation": "OBSERVE",
+              "arguments_hash": "3054436f0944fc799c9e1148cdbd85cb652c30f26cf77dc1c13d0ba278e0b54d"
+            },
+            {
+              "step_id": "move_phase_ops_warm",
+              "operation": "MOVE_TIER",
+              "arguments_hash": "9033a9efe9cf5bc31f7460940866d13d909033a61a3cf931e39661a435c6c12a"
+            },
+            {
+              "step_id": "read_phase_ops_baseline",
+              "operation": "READ_OBSERVATION",
+              "arguments_hash": "d045ab07fda4aa1d5caa0613777f7e2b953451c3108e15042c2b3c49d584bc43"
+            },
+            {
+              "step_id": "assemble_phase_ops",
+              "operation": "ASSEMBLE",
+              "arguments_hash": "03d5b2623d2bbc7724a88f54e6b485cf3804c42872f12e63ffdee4991878b226"
+            },
+            {
+              "step_id": "read_phase_ops_assembled",
+              "operation": "READ_OBSERVATION",
+              "arguments_hash": "d045ab07fda4aa1d5caa0613777f7e2b953451c3108e15042c2b3c49d584bc43"
+            },
+            {
+              "step_id": "crystallize_phase_ops",
+              "operation": "CRYSTALLIZE",
+              "arguments_hash": "104ea6c50fd30ec9c0c1d8b8b32b398104c52f15c6ce78a6464a2e21852c1c9a"
+            },
+            {
+              "step_id": "read_phase_ops_crystallized",
+              "operation": "READ_OBSERVATION",
+              "arguments_hash": "d045ab07fda4aa1d5caa0613777f7e2b953451c3108e15042c2b3c49d584bc43"
+            },
+            {
+              "step_id": "reopen_phase_ops",
+              "operation": "REOPEN",
+              "arguments_hash": "a3543f602004d83c82499036624ca5daac5dce435782717fbac8fc5bcc2c1b2d"
+            },
+            {
+              "step_id": "read_phase_ops_reopened",
+              "operation": "READ_OBSERVATION",
+              "arguments_hash": "d045ab07fda4aa1d5caa0613777f7e2b953451c3108e15042c2b3c49d584bc43"
+            }
+          ],
+          "stale_authority_count": 0,
+          "cross_axis_mutation_count": 0,
+          "public_disclosure_count": 0,
+          "trace_mismatch_count": 0,
+          "mechanism_trace": null,
+          "mechanism_events": [],
+          "causal_step_ids": [
+            "assemble_phase_ops",
+            "crystallize_phase_ops",
+            "reopen_phase_ops"
+          ],
+          "causal_entity_ids": [
+            "obs_phase_ops",
+            "asm_phase_ops",
+            "ins_phase_ops"
+          ],
+          "evaluation_preconditions_met": true,
+          "public_surface_groups_evaluated": [],
+          "sentinels_evaluated": [],
+          "preforget_public_disclosures": [],
+          "public_disclosures": []
+        },
+        {
+          "contract_id": "C08",
+          "passed": true,
+          "invariant_ids": [
+            "identity",
+            "correction_lineage"
+          ],
+          "diagnostic": "forced failure left canonical, phase, and audit state unchanged",
+          "operation_tape_hash": "9c4ac84c1c9e97879bcdc08c3b72d40b27719c77ee8dbca29fe076f77fe3f3e4",
+          "operation_sequence": [
+            {
+              "step_id": "observe_atomic",
+              "operation": "OBSERVE",
+              "arguments_hash": "eee5e43f7e3821c83bdedfd48ff6dd2d046a91eaa3beb47810a997f7766e8af2"
+            },
+            {
+              "step_id": "assemble_atomic",
+              "operation": "ASSEMBLE",
+              "arguments_hash": "6e2acabcab0384ce4da340e5bdd2c7264a9a62e8f5bfc32e8db74a20eba1800c"
+            },
+            {
+              "step_id": "snapshot_atomic_before",
+              "operation": "SNAPSHOT",
+              "arguments_hash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+            },
+            {
+              "step_id": "audit_atomic_before",
+              "operation": "AUDIT",
+              "arguments_hash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+            },
+            {
+              "step_id": "inject_atomic_failure",
+              "operation": "INJECT_FAILURE",
+              "arguments_hash": "75cafad32697459715101519cf75ea4973fe077ff24b3baa1f5a0e2e9cb4f829"
+            },
+            {
+              "step_id": "correct_atomic",
+              "operation": "CORRECT",
+              "arguments_hash": "5e881c094d30b81d63128351ecaec3baa62e48b12ad92ad6952a605cfacc7366"
+            },
+            {
+              "step_id": "snapshot_atomic_after",
+              "operation": "SNAPSHOT",
+              "arguments_hash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+            },
+            {
+              "step_id": "audit_atomic_after",
+              "operation": "AUDIT",
+              "arguments_hash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+            }
+          ],
+          "stale_authority_count": 0,
+          "cross_axis_mutation_count": 0,
+          "public_disclosure_count": 0,
+          "trace_mismatch_count": 0,
+          "mechanism_trace": null,
+          "mechanism_events": [],
+          "causal_step_ids": [
+            "observe_atomic",
+            "assemble_atomic",
+            "snapshot_atomic_before",
+            "audit_atomic_before",
+            "inject_atomic_failure",
+            "correct_atomic",
+            "snapshot_atomic_after",
+            "audit_atomic_after"
+          ],
+          "causal_entity_ids": [],
+          "evaluation_preconditions_met": true,
+          "public_surface_groups_evaluated": [],
+          "sentinels_evaluated": [],
+          "preforget_public_disclosures": [],
+          "public_disclosures": []
+        },
+        {
+          "contract_id": "C09",
+          "passed": true,
+          "invariant_ids": [
+            "restoration_and_re_presentation",
+            "provenance"
+          ],
+          "diagnostic": "user rejection blocked reopening and semantic recreation",
+          "operation_tape_hash": "b538de1693f85484cb3fdd121c062c99a46acbec805b7eb59c83d76b03933de0",
+          "operation_sequence": [
+            {
+              "step_id": "observe_reject_evidence",
+              "operation": "OBSERVE",
+              "arguments_hash": "8e7a665d526b9f1af013cdf2cb49631e44c31a772b0371e0bcc53d84ca046684"
+            },
+            {
+              "step_id": "assemble_reject",
+              "operation": "ASSEMBLE",
+              "arguments_hash": "b60bf728e1f626869972db573e6af816d3ee3245d4342a8b17a0b47006d80495"
+            },
+            {
+              "step_id": "crystallize_reject_original",
+              "operation": "CRYSTALLIZE",
+              "arguments_hash": "dcedd51f3a1414a7e1cc94083a78ca392e5863922b1ee325fbfa9c18409a05ce"
+            },
+            {
+              "step_id": "observe_rejection",
+              "operation": "OBSERVE",
+              "arguments_hash": "a253e5c01e4facdcbe2406e662fa5991f1266d6ff016c65c27e725eaebf5233d"
+            },
+            {
+              "step_id": "reject_insight",
+              "operation": "REJECT",
+              "arguments_hash": "4d4df2249c8c7c5e3916d2b17a8c108d7017b654c8ee4b1736f7a221c9054756"
+            },
+            {
+              "step_id": "reopen_rejected",
+              "operation": "REOPEN",
+              "arguments_hash": "a6228ae6543db3e1aa987ebada2e2334200aa45a4443cdf1013159e5d64a8955"
+            },
+            {
+              "step_id": "recreate_rejected",
+              "operation": "CRYSTALLIZE",
+              "arguments_hash": "aa654daf966fe559690ebfd95a3632ba9bf3037a998758fa24ee8efa367a6a57"
+            }
+          ],
+          "stale_authority_count": 0,
+          "cross_axis_mutation_count": 0,
+          "public_disclosure_count": 0,
+          "trace_mismatch_count": 0,
+          "mechanism_trace": null,
+          "mechanism_events": [],
+          "causal_step_ids": [
+            "reject_insight",
+            "reopen_rejected",
+            "recreate_rejected"
+          ],
+          "causal_entity_ids": [
+            "ins_reject",
+            "ins_reject_recreated"
+          ],
+          "evaluation_preconditions_met": true,
+          "public_surface_groups_evaluated": [],
+          "sentinels_evaluated": [],
+          "preforget_public_disclosures": [],
+          "public_disclosures": []
+        },
+        {
+          "contract_id": "C10",
+          "passed": true,
+          "invariant_ids": [
+            "deletion_and_consent",
+            "provenance",
+            "restoration_and_re_presentation"
+          ],
+          "diagnostic": "forgotten text was absent from every enumerated public surface",
+          "operation_tape_hash": "5d2b3eb209073e4cd2562e46183976b8dcbd91b226a380d136c1cd7bdf7c44f6",
+          "operation_sequence": [
+            {
+              "step_id": "observe_secret",
+              "operation": "OBSERVE",
+              "arguments_hash": "3781a68ae5cf07ee52bd15a0fff1d24ac9200e1fc8f263d40b779a1e6c413979"
+            },
+            {
+              "step_id": "observe_secret_peer",
+              "operation": "OBSERVE",
+              "arguments_hash": "cfc80a9f67559e0e03a9f55acb770926affea26bdd4c817b7a97c0d99fe63503"
+            },
+            {
+              "step_id": "relate_secret",
+              "operation": "RELATE",
+              "arguments_hash": "35c41ea4c46a800a05c511f45d596d28c89ac95bff0a4b90b420438a3ce499f9"
+            },
+            {
+              "step_id": "assemble_secret",
+              "operation": "ASSEMBLE",
+              "arguments_hash": "d6f44034ccba9a251fd1199ba4dd0e46aa721810f43cf15065a410a1717c2dc1"
+            },
+            {
+              "step_id": "crystallize_secret",
+              "operation": "CRYSTALLIZE",
+              "arguments_hash": "6fbc200c328ce7fc4f0e885797bffa73d694d0f73611500da0d988a33b18a005"
+            },
+            {
+              "step_id": "materialise_secret_surfaces",
+              "operation": "MATERIALISE_PUBLIC_SURFACES",
+              "arguments_hash": "c5fa6fd26abe27c9466ad4795d4342a6e50a3a83e1705a10da083fddd00691b1"
+            },
+            {
+              "step_id": "read_secret_surfaces_before",
+              "operation": "READ_PUBLIC_SURFACES",
+              "arguments_hash": "c5fa6fd26abe27c9466ad4795d4342a6e50a3a83e1705a10da083fddd00691b1"
+            },
+            {
+              "step_id": "forget_secret",
+              "operation": "FORGET",
+              "arguments_hash": "15a63b44381643166fe1cda3936c102e262c3cba0bdb2aa3bf4643fddb14b9e8"
+            },
+            {
+              "step_id": "read_secret_surfaces",
+              "operation": "READ_PUBLIC_SURFACES",
+              "arguments_hash": "c5fa6fd26abe27c9466ad4795d4342a6e50a3a83e1705a10da083fddd00691b1"
+            }
+          ],
+          "stale_authority_count": 0,
+          "cross_axis_mutation_count": 0,
+          "public_disclosure_count": 0,
+          "trace_mismatch_count": 0,
+          "mechanism_trace": null,
+          "mechanism_events": [],
+          "causal_step_ids": [
+            "forget_secret",
+            "read_secret_surfaces"
+          ],
+          "causal_entity_ids": [
+            "obs_secret",
+            "asm_secret",
+            "ins_secret"
+          ],
+          "evaluation_preconditions_met": true,
+          "public_surface_groups_evaluated": [
+            "public_snapshot",
+            "audit",
+            "observations",
+            "relations",
+            "assemblies",
+            "insights",
+            "derived_views",
+            "tokens",
+            "retrieval",
+            "traces"
+          ],
+          "sentinels_evaluated": [
+            "payloadsecret9x",
+            "speakersecret8v",
+            "observersecret7k",
+            "sourcesecret6m",
+            "relationsecret5q",
+            "cuesecret4r",
+            "insightsecret3t",
+            "uncertaintysecret2w",
+            "falsifiersecret1z"
+          ],
+          "preforget_public_disclosures": [
+            {
+              "surface_group": "public_snapshot",
+              "sentinel": "payloadsecret9x"
+            },
+            {
+              "surface_group": "public_snapshot",
+              "sentinel": "speakersecret8v"
+            },
+            {
+              "surface_group": "public_snapshot",
+              "sentinel": "observersecret7k"
+            },
+            {
+              "surface_group": "public_snapshot",
+              "sentinel": "sourcesecret6m"
+            },
+            {
+              "surface_group": "public_snapshot",
+              "sentinel": "relationsecret5q"
+            },
+            {
+              "surface_group": "public_snapshot",
+              "sentinel": "cuesecret4r"
+            },
+            {
+              "surface_group": "public_snapshot",
+              "sentinel": "insightsecret3t"
+            },
+            {
+              "surface_group": "public_snapshot",
+              "sentinel": "uncertaintysecret2w"
+            },
+            {
+              "surface_group": "public_snapshot",
+              "sentinel": "falsifiersecret1z"
+            },
+            {
+              "surface_group": "observations",
+              "sentinel": "payloadsecret9x"
+            },
+            {
+              "surface_group": "observations",
+              "sentinel": "speakersecret8v"
+            },
+            {
+              "surface_group": "observations",
+              "sentinel": "observersecret7k"
+            },
+            {
+              "surface_group": "observations",
+              "sentinel": "sourcesecret6m"
+            },
+            {
+              "surface_group": "relations",
+              "sentinel": "relationsecret5q"
+            },
+            {
+              "surface_group": "relations",
+              "sentinel": "cuesecret4r"
+            },
+            {
+              "surface_group": "assemblies",
+              "sentinel": "cuesecret4r"
+            },
+            {
+              "surface_group": "insights",
+              "sentinel": "insightsecret3t"
+            },
+            {
+              "surface_group": "insights",
+              "sentinel": "uncertaintysecret2w"
+            },
+            {
+              "surface_group": "insights",
+              "sentinel": "falsifiersecret1z"
+            },
+            {
+              "surface_group": "derived_views",
+              "sentinel": "payloadsecret9x"
+            },
+            {
+              "surface_group": "tokens",
+              "sentinel": "payloadsecret9x"
+            },
+            {
+              "surface_group": "traces",
+              "sentinel": "payloadsecret9x"
+            },
+            {
+              "surface_group": "traces",
+              "sentinel": "speakersecret8v"
+            },
+            {
+              "surface_group": "traces",
+              "sentinel": "observersecret7k"
+            },
+            {
+              "surface_group": "traces",
+              "sentinel": "sourcesecret6m"
+            },
+            {
+              "surface_group": "traces",
+              "sentinel": "uncertaintysecret2w"
+            }
+          ],
+          "public_disclosures": []
+        }
+      ]
+    },
+    {
+      "condition_id": "coupled_axes",
+      "removed_mechanism": "independent_epistemic_and_storage_axes",
+      "adapter_implementation": "CoupledAxesAdapter",
+      "contract_pass_count": 7,
+      "ordinary_control_pass_count": 5,
+      "ordinary_control_total": 6,
+      "stale_authority_count": 0,
+      "cross_axis_mutation_count": 8,
+      "public_disclosure_count": 0,
+      "trace_mismatch_count": 1,
+      "admissible": false,
+      "ordinary_controls": [
+        {
+          "control_id": "O01",
+          "passed": true,
+          "diagnostic": "current observation read and retrieval",
+          "operation_tape_hash": "604259b93f2b16d2195f82304bbd69024e758d43a4fccd2dbe0a3391f69c8809"
+        },
+        {
+          "control_id": "O02",
+          "passed": true,
+          "diagnostic": "pre-withdrawal retrieval, presentation, and trace",
+          "operation_tape_hash": "86ac3415cc054c51bc59154a15c6fc53d619cfe99491931a69a933bf6f54226e"
+        },
+        {
+          "control_id": "O03",
+          "passed": false,
+          "diagnostic": "two-fragment assembly and evidence-bearing crystallisation",
+          "operation_tape_hash": "ff0a9b48522fc5f1ea97a1d7280f76483b8c88932a66a99e0a0114a9f210eba5"
+        },
+        {
+          "control_id": "O04",
+          "passed": true,
+          "diagnostic": "normal storage movement and current-version restoration",
+          "operation_tape_hash": "2e1875c6a8fa26269a88212803eaff2875ddb5ca66a847a7eb004bb58b018b5f"
+        },
+        {
+          "control_id": "O05",
+          "passed": true,
+          "diagnostic": "pre-governance trace and audit",
+          "operation_tape_hash": "6af149314fd22a63be608c4eae4c84956c2d451cf9f9a1f7fbb404f4bdbe5689"
+        },
+        {
+          "control_id": "O06",
+          "passed": true,
+          "diagnostic": "ordinary non-verbal observation remained non-interpretive",
+          "operation_tape_hash": "11e97f355e647f2e9a953af6549e04b99f52098b6aa1029bae8c1f18eac194df"
+        }
+      ],
+      "contracts": [
+        {
+          "contract_id": "C01",
+          "passed": true,
+          "invariant_ids": [
+            "correction_lineage",
+            "restoration_and_re_presentation"
+          ],
+          "diagnostic": "old corrected value remained non-current",
+          "operation_tape_hash": "a8e196c46bd18a08e19cd1174997d75e41f5f1f9b8a48b03cdf338b7a7227dcd",
+          "operation_sequence": [
+            {
+              "step_id": "observe_address",
+              "operation": "OBSERVE",
+              "arguments_hash": "d8b06f2ffb9c59a3a16b26cb80dd7adcf3f9247e6eeae9d794e6d1f7a49eb88e"
+            },
+            {
+              "step_id": "move_address_cold",
+              "operation": "MOVE_TIER",
+              "arguments_hash": "8847b6e3754ef478c03d88821ebb105b748b3b7c4ceac31aceb7918bbcca4271"
+            },
+            {
+              "step_id": "correct_address",
+              "operation": "CORRECT",
+              "arguments_hash": "0d4f8965259d98888cb30890e2e7d338dbdb298d274345afe878cd4b0bc0f774"
+            },
+            {
+              "step_id": "restore_old_address",
+              "operation": "RESTORE",
+              "arguments_hash": "3caea8937f1685488eb16e0a76b905cc260ee8cfae0e15f4b7eba634f4d990aa"
+            },
+            {
+              "step_id": "read_address_after_old_restore",
+              "operation": "READ_OBSERVATION",
+              "arguments_hash": "673b53d0ef648acf2c4fabbbbc8c8556b1f26014ece2dd2a1b40f1ec6451ee25"
+            },
+            {
+              "step_id": "restore_current_address",
+              "operation": "RESTORE",
+              "arguments_hash": "0167edfaf1146c842efbc8a38b440e7bdc047d5fd188a457f886d868e8f55cbe"
+            },
+            {
+              "step_id": "read_address_current",
+              "operation": "READ_OBSERVATION",
+              "arguments_hash": "673b53d0ef648acf2c4fabbbbc8c8556b1f26014ece2dd2a1b40f1ec6451ee25"
+            },
+            {
+              "step_id": "read_address_v1",
+              "operation": "READ_OBSERVATION",
+              "arguments_hash": "86a9b2b4a23d35409752c99e4bb161b1ed92d5cf287dd7b378ab111cc5b8cdec"
+            }
+          ],
+          "stale_authority_count": 0,
+          "cross_axis_mutation_count": 0,
+          "public_disclosure_count": 0,
+          "trace_mismatch_count": 0,
+          "mechanism_trace": null,
+          "mechanism_events": [],
+          "causal_step_ids": [
+            "restore_old_address",
+            "read_address_after_old_restore"
+          ],
+          "causal_entity_ids": [
+            "obs_address"
+          ],
+          "evaluation_preconditions_met": true,
+          "public_surface_groups_evaluated": [],
+          "sentinels_evaluated": [],
+          "preforget_public_disclosures": [],
+          "public_disclosures": []
+        },
+        {
+          "contract_id": "C02",
+          "passed": true,
+          "invariant_ids": [
+            "deletion_and_consent",
+            "representation_loss_declaration"
+          ],
+          "diagnostic": "consent withdrawal blocked the materialised index and its trace",
+          "operation_tape_hash": "db6adb2620f16613d41429a8eb5b7e3855eb0a6edd5b7ab7e082bbca0e888822",
+          "operation_sequence": [
+            {
+              "step_id": "observe_private",
+              "operation": "OBSERVE",
+              "arguments_hash": "af512b7a2f84d0fb5559af2b9459619dcd1ce8447a8d28117f8251be0db97899"
+            },
+            {
+              "step_id": "retrieve_private_before",
+              "operation": "RETRIEVE",
+              "arguments_hash": "37b5a7106d16e250074527c8f03095327a4dc15d56af87696a82e061e15a3e12"
+            },
+            {
+              "step_id": "trace_private_before",
+              "operation": "TRACE_INDEX",
+              "arguments_hash": "3eae3b90492ea00693d58e505247fde6e043b3db996320df1094a7f011041bfd"
+            },
+            {
+              "step_id": "withdraw_private",
+              "operation": "WITHDRAW_CONSENT",
+              "arguments_hash": "0d0fb7c22538b9ee504f9b64dd03a983df7316a29d1dd9e850b5648b3b213178"
+            },
+            {
+              "step_id": "retrieve_private_after",
+              "operation": "RETRIEVE",
+              "arguments_hash": "37b5a7106d16e250074527c8f03095327a4dc15d56af87696a82e061e15a3e12"
+            },
+            {
+              "step_id": "trace_private_after",
+              "operation": "TRACE_INDEX",
+              "arguments_hash": "3eae3b90492ea00693d58e505247fde6e043b3db996320df1094a7f011041bfd"
+            }
+          ],
+          "stale_authority_count": 0,
+          "cross_axis_mutation_count": 0,
+          "public_disclosure_count": 0,
+          "trace_mismatch_count": 0,
+          "mechanism_trace": null,
+          "mechanism_events": [],
+          "causal_step_ids": [
+            "withdraw_private",
+            "retrieve_private_after",
+            "trace_private_after"
+          ],
+          "causal_entity_ids": [
+            "obs_private"
+          ],
+          "evaluation_preconditions_met": true,
+          "public_surface_groups_evaluated": [],
+          "sentinels_evaluated": [],
+          "preforget_public_disclosures": [],
+          "public_disclosures": []
+        },
+        {
+          "contract_id": "C03",
+          "passed": true,
+          "invariant_ids": [
+            "identity",
+            "temporal_validity"
+          ],
+          "diagnostic": "a delayed cue discovered and assembled both dispersed fragments",
+          "operation_tape_hash": "be1b52333f7c8452984b76e384e8faab011b91d2dc3033f14a10763d0de29c83",
+          "operation_sequence": [
+            {
+              "step_id": "observe_delayed_old",
+              "operation": "OBSERVE",
+              "arguments_hash": "639072de13ef234e778b40dc428fcb9d992829b2c550c011d220b6e7125db5c6"
+            },
+            {
+              "step_id": "observe_delayed_later",
+              "operation": "OBSERVE",
+              "arguments_hash": "e4f2128291884e754d7bc64bcf732d981b0a19e9d318aecaa6f7b24b8dc435fa"
+            },
+            {
+              "step_id": "assemble_delayed_by_cue",
+              "operation": "ASSEMBLE_BY_CUE",
+              "arguments_hash": "be38355a76e08e55e185cddf74ba586105317dabb562751fea72e4f512da88dd"
+            },
+            {
+              "step_id": "read_delayed_assembly",
+              "operation": "READ_ASSEMBLY",
+              "arguments_hash": "88bd577f4e0ba0836a03efec085e3e1e212c0457ef954847c7fa030b88db8c17"
+            },
+            {
+              "step_id": "read_delayed_old",
+              "operation": "READ_OBSERVATION",
+              "arguments_hash": "2686994622b3628ac2bab469811bf9e4e4bd27a8c7562c811df31f3fea773eb7"
+            },
+            {
+              "step_id": "read_delayed_later",
+              "operation": "READ_OBSERVATION",
+              "arguments_hash": "186f8089914ca53170095e2c4b9ca412a0dfe3944b70d91b5ed901adfcb23f93"
+            }
+          ],
+          "stale_authority_count": 0,
+          "cross_axis_mutation_count": 2,
+          "public_disclosure_count": 0,
+          "trace_mismatch_count": 0,
+          "mechanism_trace": null,
+          "mechanism_events": [
+            {
+              "step_id": "assemble_delayed_by_cue",
+              "kind": "tier_changed_by_phase_operation",
+              "mechanism": "independent_epistemic_and_storage_axes",
+              "entity_ids": [
+                "obs_later"
+              ],
+              "detail": "ASSEMBLE changed storage tier hot -> warm because phase became assembling"
+            },
+            {
+              "step_id": "assemble_delayed_by_cue",
+              "kind": "tier_changed_by_phase_operation",
+              "mechanism": "independent_epistemic_and_storage_axes",
+              "entity_ids": [
+                "obs_old"
+              ],
+              "detail": "ASSEMBLE changed storage tier hot -> warm because phase became assembling"
+            }
+          ],
+          "causal_step_ids": [
+            "observe_delayed_old",
+            "observe_delayed_later",
+            "assemble_delayed_by_cue",
+            "read_delayed_assembly",
+            "read_delayed_old",
+            "read_delayed_later"
+          ],
+          "causal_entity_ids": [],
+          "evaluation_preconditions_met": true,
+          "public_surface_groups_evaluated": [],
+          "sentinels_evaluated": [],
+          "preforget_public_disclosures": [],
+          "public_disclosures": []
+        },
+        {
+          "contract_id": "C04",
+          "passed": true,
+          "invariant_ids": [
+            "provenance",
+            "representation_loss_declaration"
+          ],
+          "diagnostic": "observed prosody remained distinct from an inferred emotion",
+          "operation_tape_hash": "ce8dd4b9d6e3f09366620ab54f3e001db340a38aadbba26a16c9ed12fe771124",
+          "operation_sequence": [
+            {
+              "step_id": "observe_voice_drop",
+              "operation": "OBSERVE",
+              "arguments_hash": "716b576eb7d79ab52b102632b414bb4cf6251bd6b1c3d304ab1e1491e79e4edf"
+            },
+            {
+              "step_id": "observe_voice_as_sad",
+              "operation": "OBSERVE",
+              "arguments_hash": "8ba49c0354c03d21577e67df56ee71e4083f0a2c68279cbda74bae094ed106e0"
+            }
+          ],
+          "stale_authority_count": 0,
+          "cross_axis_mutation_count": 0,
+          "public_disclosure_count": 0,
+          "trace_mismatch_count": 0,
+          "mechanism_trace": null,
+          "mechanism_events": [],
+          "causal_step_ids": [
+            "observe_voice_drop",
+            "observe_voice_as_sad"
+          ],
+          "causal_entity_ids": [],
+          "evaluation_preconditions_met": true,
+          "public_surface_groups_evaluated": [],
+          "sentinels_evaluated": [],
+          "preforget_public_disclosures": [],
+          "public_disclosures": []
+        },
+        {
+          "contract_id": "C05",
+          "passed": true,
+          "invariant_ids": [
+            "simultaneity_and_ordering",
+            "deletion_and_consent"
+          ],
+          "diagnostic": "low-frequency and low-similarity contradiction remained available",
+          "operation_tape_hash": "f8396875706af41bc0c2f0d1b1c3e315e2d1337829aa988e4708a7248961fa67",
+          "operation_sequence": [
+            {
+              "step_id": "observe_claim",
+              "operation": "OBSERVE",
+              "arguments_hash": "64d5d207f7222240161dca58d8307d9f3d957ae786ae1f28e0130bc22d749208"
+            },
+            {
+              "step_id": "observe_counter",
+              "operation": "OBSERVE",
+              "arguments_hash": "21a287c8f41f98e699f88b2700d35de327a83577ecb013e7d6ac5f5d1c3917cd"
+            },
+            {
+              "step_id": "relate_contradiction",
+              "operation": "RELATE",
+              "arguments_hash": "275bca62caebb24686c023a879ce731100c62853aadedff73596b368e60e8ea2"
+            },
+            {
+              "step_id": "prune_counter_frequency",
+              "operation": "CONSIDER_PRUNE",
+              "arguments_hash": "3d9dbbd151c10b0a17621a6f9370d8d319d13bd2dae5966e008a05078ee1a8c9"
+            },
+            {
+              "step_id": "prune_counter_similarity",
+              "operation": "CONSIDER_PRUNE",
+              "arguments_hash": "9b1a9ac945ee3785e25d298cda6f20afeffd508479600ca884a7cacaf992ac85"
+            },
+            {
+              "step_id": "read_counter",
+              "operation": "READ_OBSERVATION",
+              "arguments_hash": "8f5d4a405bb3e2943b2ef58f79860239993c5c76c2153f33a214caac7d7a02e7"
+            },
+            {
+              "step_id": "snapshot_counter",
+              "operation": "SNAPSHOT",
+              "arguments_hash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+            }
+          ],
+          "stale_authority_count": 0,
+          "cross_axis_mutation_count": 0,
+          "public_disclosure_count": 0,
+          "trace_mismatch_count": 0,
+          "mechanism_trace": null,
+          "mechanism_events": [],
+          "causal_step_ids": [
+            "observe_claim",
+            "observe_counter",
+            "relate_contradiction",
+            "prune_counter_frequency",
+            "prune_counter_similarity",
+            "read_counter",
+            "snapshot_counter"
+          ],
+          "causal_entity_ids": [],
+          "evaluation_preconditions_met": true,
+          "public_surface_groups_evaluated": [],
+          "sentinels_evaluated": [],
+          "preforget_public_disclosures": [],
+          "public_disclosures": []
+        },
+        {
+          "contract_id": "C06",
+          "passed": false,
+          "invariant_ids": [
+            "identity",
+            "restoration_and_re_presentation"
+          ],
+          "diagnostic": "tier movement changed phases to dispersed,assembling,crystallized,dispersed",
+          "operation_tape_hash": "32b2551aa3fabf790f3426244ca564c11269a83402eb14b1e4373931201d7737",
+          "operation_sequence": [
+            {
+              "step_id": "observe_tier_phase",
+              "operation": "OBSERVE",
+              "arguments_hash": "fa4723f0d2d17c703e409b6f170a11a257ffb493227a9b178a69ef8942bafd7c"
+            },
+            {
+              "step_id": "read_tier_phase_initial",
+              "operation": "READ_OBSERVATION",
+              "arguments_hash": "69ae68c184c0d9463df0511241ebb1825af14592474bdfededd792d993e5389a"
+            },
+            {
+              "step_id": "move_tier_phase_warm",
+              "operation": "MOVE_TIER",
+              "arguments_hash": "cf4d361a3fde2d992922c58f59841eabba25c53ae3d742a6ee8a67b19e22959d"
+            },
+            {
+              "step_id": "read_tier_phase_warm",
+              "operation": "READ_OBSERVATION",
+              "arguments_hash": "69ae68c184c0d9463df0511241ebb1825af14592474bdfededd792d993e5389a"
+            },
+            {
+              "step_id": "move_tier_phase_cold",
+              "operation": "MOVE_TIER",
+              "arguments_hash": "a7cf7fdd5a209f8ab00c5f15371bdd9191bc6c12ce1cf997833aa88cb74b339b"
+            },
+            {
+              "step_id": "read_tier_phase_cold",
+              "operation": "READ_OBSERVATION",
+              "arguments_hash": "69ae68c184c0d9463df0511241ebb1825af14592474bdfededd792d993e5389a"
+            },
+            {
+              "step_id": "move_tier_phase_hot",
+              "operation": "MOVE_TIER",
+              "arguments_hash": "47f465eefee7a072a647d25c22e66918c062b6eb5bf715f89da2c9734b630cc0"
+            },
+            {
+              "step_id": "read_tier_phase_hot",
+              "operation": "READ_OBSERVATION",
+              "arguments_hash": "69ae68c184c0d9463df0511241ebb1825af14592474bdfededd792d993e5389a"
+            }
+          ],
+          "stale_authority_count": 0,
+          "cross_axis_mutation_count": 3,
+          "public_disclosure_count": 0,
+          "trace_mismatch_count": 0,
+          "mechanism_trace": "independent_epistemic_and_storage_axes",
+          "mechanism_events": [
+            {
+              "step_id": "move_tier_phase_warm",
+              "kind": "phase_changed_by_tier_move",
+              "mechanism": "independent_epistemic_and_storage_axes",
+              "entity_ids": [
+                "obs_tier_phase"
+              ],
+              "detail": "dispersed -> assembling because storage tier moved to warm"
+            },
+            {
+              "step_id": "move_tier_phase_cold",
+              "kind": "phase_changed_by_tier_move",
+              "mechanism": "independent_epistemic_and_storage_axes",
+              "entity_ids": [
+                "obs_tier_phase"
+              ],
+              "detail": "assembling -> crystallized because storage tier moved to cold"
+            },
+            {
+              "step_id": "move_tier_phase_hot",
+              "kind": "phase_changed_by_tier_move",
+              "mechanism": "independent_epistemic_and_storage_axes",
+              "entity_ids": [
+                "obs_tier_phase"
+              ],
+              "detail": "crystallized -> dispersed because storage tier moved to hot"
+            }
+          ],
+          "causal_step_ids": [
+            "move_tier_phase_warm",
+            "move_tier_phase_cold",
+            "move_tier_phase_hot"
+          ],
+          "causal_entity_ids": [
+            "obs_tier_phase"
+          ],
+          "evaluation_preconditions_met": true,
+          "public_surface_groups_evaluated": [],
+          "sentinels_evaluated": [],
+          "preforget_public_disclosures": [],
+          "public_disclosures": []
+        },
+        {
+          "contract_id": "C07",
+          "passed": false,
+          "invariant_ids": [
+            "identity",
+            "representation_loss_declaration"
+          ],
+          "diagnostic": "epistemic operations produced tiers warm,warm,cold,hot",
+          "operation_tape_hash": "38a322812c71f08ad544d3f2a455aed8ca73fbc5067911c05802d24397a2289e",
+          "operation_sequence": [
+            {
+              "step_id": "observe_phase_ops",
+              "operation": "OBSERVE",
+              "arguments_hash": "3054436f0944fc799c9e1148cdbd85cb652c30f26cf77dc1c13d0ba278e0b54d"
+            },
+            {
+              "step_id": "move_phase_ops_warm",
+              "operation": "MOVE_TIER",
+              "arguments_hash": "9033a9efe9cf5bc31f7460940866d13d909033a61a3cf931e39661a435c6c12a"
+            },
+            {
+              "step_id": "read_phase_ops_baseline",
+              "operation": "READ_OBSERVATION",
+              "arguments_hash": "d045ab07fda4aa1d5caa0613777f7e2b953451c3108e15042c2b3c49d584bc43"
+            },
+            {
+              "step_id": "assemble_phase_ops",
+              "operation": "ASSEMBLE",
+              "arguments_hash": "03d5b2623d2bbc7724a88f54e6b485cf3804c42872f12e63ffdee4991878b226"
+            },
+            {
+              "step_id": "read_phase_ops_assembled",
+              "operation": "READ_OBSERVATION",
+              "arguments_hash": "d045ab07fda4aa1d5caa0613777f7e2b953451c3108e15042c2b3c49d584bc43"
+            },
+            {
+              "step_id": "crystallize_phase_ops",
+              "operation": "CRYSTALLIZE",
+              "arguments_hash": "104ea6c50fd30ec9c0c1d8b8b32b398104c52f15c6ce78a6464a2e21852c1c9a"
+            },
+            {
+              "step_id": "read_phase_ops_crystallized",
+              "operation": "READ_OBSERVATION",
+              "arguments_hash": "d045ab07fda4aa1d5caa0613777f7e2b953451c3108e15042c2b3c49d584bc43"
+            },
+            {
+              "step_id": "reopen_phase_ops",
+              "operation": "REOPEN",
+              "arguments_hash": "a3543f602004d83c82499036624ca5daac5dce435782717fbac8fc5bcc2c1b2d"
+            },
+            {
+              "step_id": "read_phase_ops_reopened",
+              "operation": "READ_OBSERVATION",
+              "arguments_hash": "d045ab07fda4aa1d5caa0613777f7e2b953451c3108e15042c2b3c49d584bc43"
+            }
+          ],
+          "stale_authority_count": 0,
+          "cross_axis_mutation_count": 2,
+          "public_disclosure_count": 0,
+          "trace_mismatch_count": 0,
+          "mechanism_trace": "independent_epistemic_and_storage_axes",
+          "mechanism_events": [
+            {
+              "step_id": "crystallize_phase_ops",
+              "kind": "tier_changed_by_phase_operation",
+              "mechanism": "independent_epistemic_and_storage_axes",
+              "entity_ids": [
+                "obs_phase_ops"
+              ],
+              "detail": "CRYSTALLIZE changed storage tier warm -> cold because phase became crystallized"
+            },
+            {
+              "step_id": "reopen_phase_ops",
+              "kind": "tier_changed_by_phase_operation",
+              "mechanism": "independent_epistemic_and_storage_axes",
+              "entity_ids": [
+                "obs_phase_ops"
+              ],
+              "detail": "REOPEN changed storage tier cold -> hot because phase became dispersed"
+            }
+          ],
+          "causal_step_ids": [
+            "assemble_phase_ops",
+            "crystallize_phase_ops",
+            "reopen_phase_ops"
+          ],
+          "causal_entity_ids": [
+            "obs_phase_ops",
+            "asm_phase_ops",
+            "ins_phase_ops"
+          ],
+          "evaluation_preconditions_met": true,
+          "public_surface_groups_evaluated": [],
+          "sentinels_evaluated": [],
+          "preforget_public_disclosures": [],
+          "public_disclosures": []
+        },
+        {
+          "contract_id": "C08",
+          "passed": true,
+          "invariant_ids": [
+            "identity",
+            "correction_lineage"
+          ],
+          "diagnostic": "forced failure left canonical, phase, and audit state unchanged",
+          "operation_tape_hash": "9c4ac84c1c9e97879bcdc08c3b72d40b27719c77ee8dbca29fe076f77fe3f3e4",
+          "operation_sequence": [
+            {
+              "step_id": "observe_atomic",
+              "operation": "OBSERVE",
+              "arguments_hash": "eee5e43f7e3821c83bdedfd48ff6dd2d046a91eaa3beb47810a997f7766e8af2"
+            },
+            {
+              "step_id": "assemble_atomic",
+              "operation": "ASSEMBLE",
+              "arguments_hash": "6e2acabcab0384ce4da340e5bdd2c7264a9a62e8f5bfc32e8db74a20eba1800c"
+            },
+            {
+              "step_id": "snapshot_atomic_before",
+              "operation": "SNAPSHOT",
+              "arguments_hash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+            },
+            {
+              "step_id": "audit_atomic_before",
+              "operation": "AUDIT",
+              "arguments_hash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+            },
+            {
+              "step_id": "inject_atomic_failure",
+              "operation": "INJECT_FAILURE",
+              "arguments_hash": "75cafad32697459715101519cf75ea4973fe077ff24b3baa1f5a0e2e9cb4f829"
+            },
+            {
+              "step_id": "correct_atomic",
+              "operation": "CORRECT",
+              "arguments_hash": "5e881c094d30b81d63128351ecaec3baa62e48b12ad92ad6952a605cfacc7366"
+            },
+            {
+              "step_id": "snapshot_atomic_after",
+              "operation": "SNAPSHOT",
+              "arguments_hash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+            },
+            {
+              "step_id": "audit_atomic_after",
+              "operation": "AUDIT",
+              "arguments_hash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+            }
+          ],
+          "stale_authority_count": 0,
+          "cross_axis_mutation_count": 1,
+          "public_disclosure_count": 0,
+          "trace_mismatch_count": 0,
+          "mechanism_trace": null,
+          "mechanism_events": [
+            {
+              "step_id": "assemble_atomic",
+              "kind": "tier_changed_by_phase_operation",
+              "mechanism": "independent_epistemic_and_storage_axes",
+              "entity_ids": [
+                "obs_atomic"
+              ],
+              "detail": "ASSEMBLE changed storage tier hot -> warm because phase became assembling"
+            }
+          ],
+          "causal_step_ids": [
+            "observe_atomic",
+            "assemble_atomic",
+            "snapshot_atomic_before",
+            "audit_atomic_before",
+            "inject_atomic_failure",
+            "correct_atomic",
+            "snapshot_atomic_after",
+            "audit_atomic_after"
+          ],
+          "causal_entity_ids": [],
+          "evaluation_preconditions_met": true,
+          "public_surface_groups_evaluated": [],
+          "sentinels_evaluated": [],
+          "preforget_public_disclosures": [],
+          "public_disclosures": []
+        },
+        {
+          "contract_id": "C09",
+          "passed": true,
+          "invariant_ids": [
+            "restoration_and_re_presentation",
+            "provenance"
+          ],
+          "diagnostic": "user rejection blocked reopening and semantic recreation",
+          "operation_tape_hash": "b538de1693f85484cb3fdd121c062c99a46acbec805b7eb59c83d76b03933de0",
+          "operation_sequence": [
+            {
+              "step_id": "observe_reject_evidence",
+              "operation": "OBSERVE",
+              "arguments_hash": "8e7a665d526b9f1af013cdf2cb49631e44c31a772b0371e0bcc53d84ca046684"
+            },
+            {
+              "step_id": "assemble_reject",
+              "operation": "ASSEMBLE",
+              "arguments_hash": "b60bf728e1f626869972db573e6af816d3ee3245d4342a8b17a0b47006d80495"
+            },
+            {
+              "step_id": "crystallize_reject_original",
+              "operation": "CRYSTALLIZE",
+              "arguments_hash": "dcedd51f3a1414a7e1cc94083a78ca392e5863922b1ee325fbfa9c18409a05ce"
+            },
+            {
+              "step_id": "observe_rejection",
+              "operation": "OBSERVE",
+              "arguments_hash": "a253e5c01e4facdcbe2406e662fa5991f1266d6ff016c65c27e725eaebf5233d"
+            },
+            {
+              "step_id": "reject_insight",
+              "operation": "REJECT",
+              "arguments_hash": "4d4df2249c8c7c5e3916d2b17a8c108d7017b654c8ee4b1736f7a221c9054756"
+            },
+            {
+              "step_id": "reopen_rejected",
+              "operation": "REOPEN",
+              "arguments_hash": "a6228ae6543db3e1aa987ebada2e2334200aa45a4443cdf1013159e5d64a8955"
+            },
+            {
+              "step_id": "recreate_rejected",
+              "operation": "CRYSTALLIZE",
+              "arguments_hash": "aa654daf966fe559690ebfd95a3632ba9bf3037a998758fa24ee8efa367a6a57"
+            }
+          ],
+          "stale_authority_count": 0,
+          "cross_axis_mutation_count": 0,
+          "public_disclosure_count": 0,
+          "trace_mismatch_count": 0,
+          "mechanism_trace": null,
+          "mechanism_events": [],
+          "causal_step_ids": [
+            "reject_insight",
+            "reopen_rejected",
+            "recreate_rejected"
+          ],
+          "causal_entity_ids": [
+            "ins_reject",
+            "ins_reject_recreated"
+          ],
+          "evaluation_preconditions_met": true,
+          "public_surface_groups_evaluated": [],
+          "sentinels_evaluated": [],
+          "preforget_public_disclosures": [],
+          "public_disclosures": []
+        },
+        {
+          "contract_id": "C10",
+          "passed": false,
+          "invariant_ids": [
+            "deletion_and_consent",
+            "provenance",
+            "restoration_and_re_presentation"
+          ],
+          "diagnostic": "public-surface evaluation was incomplete or a fixture setup operation failed",
+          "operation_tape_hash": "5d2b3eb209073e4cd2562e46183976b8dcbd91b226a380d136c1cd7bdf7c44f6",
+          "operation_sequence": [
+            {
+              "step_id": "observe_secret",
+              "operation": "OBSERVE",
+              "arguments_hash": "3781a68ae5cf07ee52bd15a0fff1d24ac9200e1fc8f263d40b779a1e6c413979"
+            },
+            {
+              "step_id": "observe_secret_peer",
+              "operation": "OBSERVE",
+              "arguments_hash": "cfc80a9f67559e0e03a9f55acb770926affea26bdd4c817b7a97c0d99fe63503"
+            },
+            {
+              "step_id": "relate_secret",
+              "operation": "RELATE",
+              "arguments_hash": "35c41ea4c46a800a05c511f45d596d28c89ac95bff0a4b90b420438a3ce499f9"
+            },
+            {
+              "step_id": "assemble_secret",
+              "operation": "ASSEMBLE",
+              "arguments_hash": "d6f44034ccba9a251fd1199ba4dd0e46aa721810f43cf15065a410a1717c2dc1"
+            },
+            {
+              "step_id": "crystallize_secret",
+              "operation": "CRYSTALLIZE",
+              "arguments_hash": "6fbc200c328ce7fc4f0e885797bffa73d694d0f73611500da0d988a33b18a005"
+            },
+            {
+              "step_id": "materialise_secret_surfaces",
+              "operation": "MATERIALISE_PUBLIC_SURFACES",
+              "arguments_hash": "c5fa6fd26abe27c9466ad4795d4342a6e50a3a83e1705a10da083fddd00691b1"
+            },
+            {
+              "step_id": "read_secret_surfaces_before",
+              "operation": "READ_PUBLIC_SURFACES",
+              "arguments_hash": "c5fa6fd26abe27c9466ad4795d4342a6e50a3a83e1705a10da083fddd00691b1"
+            },
+            {
+              "step_id": "forget_secret",
+              "operation": "FORGET",
+              "arguments_hash": "15a63b44381643166fe1cda3936c102e262c3cba0bdb2aa3bf4643fddb14b9e8"
+            },
+            {
+              "step_id": "read_secret_surfaces",
+              "operation": "READ_PUBLIC_SURFACES",
+              "arguments_hash": "c5fa6fd26abe27c9466ad4795d4342a6e50a3a83e1705a10da083fddd00691b1"
+            }
+          ],
+          "stale_authority_count": 0,
+          "cross_axis_mutation_count": 0,
+          "public_disclosure_count": 0,
+          "trace_mismatch_count": 1,
+          "mechanism_trace": null,
+          "mechanism_events": [],
+          "causal_step_ids": [
+            "forget_secret",
+            "read_secret_surfaces"
+          ],
+          "causal_entity_ids": [
+            "obs_secret",
+            "asm_secret",
+            "ins_secret"
+          ],
+          "evaluation_preconditions_met": false,
+          "public_surface_groups_evaluated": [
+            "public_snapshot",
+            "audit",
+            "observations",
+            "relations",
+            "assemblies",
+            "insights",
+            "derived_views",
+            "tokens",
+            "retrieval",
+            "traces"
+          ],
+          "sentinels_evaluated": [
+            "payloadsecret9x",
+            "speakersecret8v",
+            "observersecret7k",
+            "sourcesecret6m",
+            "relationsecret5q",
+            "cuesecret4r",
+            "insightsecret3t",
+            "uncertaintysecret2w",
+            "falsifiersecret1z"
+          ],
+          "preforget_public_disclosures": [],
+          "public_disclosures": []
+        }
+      ]
+    },
+    {
+      "condition_id": "delayed_governance",
+      "removed_mechanism": "immediate_governance_propagation",
+      "adapter_implementation": "DelayedGovernanceAdapter",
+      "contract_pass_count": 7,
+      "ordinary_control_pass_count": 6,
+      "ordinary_control_total": 6,
+      "stale_authority_count": 6,
+      "cross_axis_mutation_count": 0,
+      "public_disclosure_count": 11,
+      "trace_mismatch_count": 0,
+      "admissible": true,
+      "ordinary_controls": [
+        {
+          "control_id": "O01",
+          "passed": true,
+          "diagnostic": "current observation read and retrieval",
+          "operation_tape_hash": "604259b93f2b16d2195f82304bbd69024e758d43a4fccd2dbe0a3391f69c8809"
+        },
+        {
+          "control_id": "O02",
+          "passed": true,
+          "diagnostic": "pre-withdrawal retrieval, presentation, and trace",
+          "operation_tape_hash": "86ac3415cc054c51bc59154a15c6fc53d619cfe99491931a69a933bf6f54226e"
+        },
+        {
+          "control_id": "O03",
+          "passed": true,
+          "diagnostic": "two-fragment assembly and evidence-bearing crystallisation",
+          "operation_tape_hash": "ff0a9b48522fc5f1ea97a1d7280f76483b8c88932a66a99e0a0114a9f210eba5"
+        },
+        {
+          "control_id": "O04",
+          "passed": true,
+          "diagnostic": "normal storage movement and current-version restoration",
+          "operation_tape_hash": "2e1875c6a8fa26269a88212803eaff2875ddb5ca66a847a7eb004bb58b018b5f"
+        },
+        {
+          "control_id": "O05",
+          "passed": true,
+          "diagnostic": "pre-governance trace and audit",
+          "operation_tape_hash": "6af149314fd22a63be608c4eae4c84956c2d451cf9f9a1f7fbb404f4bdbe5689"
+        },
+        {
+          "control_id": "O06",
+          "passed": true,
+          "diagnostic": "ordinary non-verbal observation remained non-interpretive",
+          "operation_tape_hash": "11e97f355e647f2e9a953af6549e04b99f52098b6aa1029bae8c1f18eac194df"
+        }
+      ],
+      "contracts": [
+        {
+          "contract_id": "C01",
+          "passed": true,
+          "invariant_ids": [
+            "correction_lineage",
+            "restoration_and_re_presentation"
+          ],
+          "diagnostic": "old corrected value remained non-current",
+          "operation_tape_hash": "a8e196c46bd18a08e19cd1174997d75e41f5f1f9b8a48b03cdf338b7a7227dcd",
+          "operation_sequence": [
+            {
+              "step_id": "observe_address",
+              "operation": "OBSERVE",
+              "arguments_hash": "d8b06f2ffb9c59a3a16b26cb80dd7adcf3f9247e6eeae9d794e6d1f7a49eb88e"
+            },
+            {
+              "step_id": "move_address_cold",
+              "operation": "MOVE_TIER",
+              "arguments_hash": "8847b6e3754ef478c03d88821ebb105b748b3b7c4ceac31aceb7918bbcca4271"
+            },
+            {
+              "step_id": "correct_address",
+              "operation": "CORRECT",
+              "arguments_hash": "0d4f8965259d98888cb30890e2e7d338dbdb298d274345afe878cd4b0bc0f774"
+            },
+            {
+              "step_id": "restore_old_address",
+              "operation": "RESTORE",
+              "arguments_hash": "3caea8937f1685488eb16e0a76b905cc260ee8cfae0e15f4b7eba634f4d990aa"
+            },
+            {
+              "step_id": "read_address_after_old_restore",
+              "operation": "READ_OBSERVATION",
+              "arguments_hash": "673b53d0ef648acf2c4fabbbbc8c8556b1f26014ece2dd2a1b40f1ec6451ee25"
+            },
+            {
+              "step_id": "restore_current_address",
+              "operation": "RESTORE",
+              "arguments_hash": "0167edfaf1146c842efbc8a38b440e7bdc047d5fd188a457f886d868e8f55cbe"
+            },
+            {
+              "step_id": "read_address_current",
+              "operation": "READ_OBSERVATION",
+              "arguments_hash": "673b53d0ef648acf2c4fabbbbc8c8556b1f26014ece2dd2a1b40f1ec6451ee25"
+            },
+            {
+              "step_id": "read_address_v1",
+              "operation": "READ_OBSERVATION",
+              "arguments_hash": "86a9b2b4a23d35409752c99e4bb161b1ed92d5cf287dd7b378ab111cc5b8cdec"
+            }
+          ],
+          "stale_authority_count": 0,
+          "cross_axis_mutation_count": 0,
+          "public_disclosure_count": 0,
+          "trace_mismatch_count": 0,
+          "mechanism_trace": null,
+          "mechanism_events": [],
+          "causal_step_ids": [
+            "restore_old_address",
+            "read_address_after_old_restore"
+          ],
+          "causal_entity_ids": [
+            "obs_address"
+          ],
+          "evaluation_preconditions_met": true,
+          "public_surface_groups_evaluated": [],
+          "sentinels_evaluated": [],
+          "preforget_public_disclosures": [],
+          "public_disclosures": []
+        },
+        {
+          "contract_id": "C02",
+          "passed": false,
+          "invariant_ids": [
+            "deletion_and_consent",
+            "representation_loss_declaration"
+          ],
+          "diagnostic": "a materialised index remained usable after consent withdrawal",
+          "operation_tape_hash": "db6adb2620f16613d41429a8eb5b7e3855eb0a6edd5b7ab7e082bbca0e888822",
+          "operation_sequence": [
+            {
+              "step_id": "observe_private",
+              "operation": "OBSERVE",
+              "arguments_hash": "af512b7a2f84d0fb5559af2b9459619dcd1ce8447a8d28117f8251be0db97899"
+            },
+            {
+              "step_id": "retrieve_private_before",
+              "operation": "RETRIEVE",
+              "arguments_hash": "37b5a7106d16e250074527c8f03095327a4dc15d56af87696a82e061e15a3e12"
+            },
+            {
+              "step_id": "trace_private_before",
+              "operation": "TRACE_INDEX",
+              "arguments_hash": "3eae3b90492ea00693d58e505247fde6e043b3db996320df1094a7f011041bfd"
+            },
+            {
+              "step_id": "withdraw_private",
+              "operation": "WITHDRAW_CONSENT",
+              "arguments_hash": "0d0fb7c22538b9ee504f9b64dd03a983df7316a29d1dd9e850b5648b3b213178"
+            },
+            {
+              "step_id": "retrieve_private_after",
+              "operation": "RETRIEVE",
+              "arguments_hash": "37b5a7106d16e250074527c8f03095327a4dc15d56af87696a82e061e15a3e12"
+            },
+            {
+              "step_id": "trace_private_after",
+              "operation": "TRACE_INDEX",
+              "arguments_hash": "3eae3b90492ea00693d58e505247fde6e043b3db996320df1094a7f011041bfd"
+            }
+          ],
+          "stale_authority_count": 2,
+          "cross_axis_mutation_count": 0,
+          "public_disclosure_count": 0,
+          "trace_mismatch_count": 0,
+          "mechanism_trace": "immediate_governance_propagation",
+          "mechanism_events": [
+            {
+              "step_id": "withdraw_private",
+              "kind": "governance_update_queued_for_views",
+              "mechanism": "immediate_governance_propagation",
+              "entity_ids": [
+                "obs_private"
+              ],
+              "detail": "canonical consent changed immediately; materialised indexes await rebuilding"
+            },
+            {
+              "step_id": "retrieve_private_after",
+              "kind": "stale_governed_view_used",
+              "mechanism": "immediate_governance_propagation",
+              "entity_ids": [
+                "obs_private",
+                "view_search_index_obs_private_v1"
+              ],
+              "detail": "retrieve used a materialised index before canonical governance propagated"
+            },
+            {
+              "step_id": "trace_private_after",
+              "kind": "stale_governed_view_used",
+              "mechanism": "immediate_governance_propagation",
+              "entity_ids": [
+                "obs_private",
+                "view_search_index_obs_private_v1"
+              ],
+              "detail": "TRACE used a materialised index before canonical governance propagated"
+            }
+          ],
+          "causal_step_ids": [
+            "withdraw_private",
+            "retrieve_private_after",
+            "trace_private_after"
+          ],
+          "causal_entity_ids": [
+            "obs_private"
+          ],
+          "evaluation_preconditions_met": true,
+          "public_surface_groups_evaluated": [],
+          "sentinels_evaluated": [],
+          "preforget_public_disclosures": [],
+          "public_disclosures": []
+        },
+        {
+          "contract_id": "C03",
+          "passed": true,
+          "invariant_ids": [
+            "identity",
+            "temporal_validity"
+          ],
+          "diagnostic": "a delayed cue discovered and assembled both dispersed fragments",
+          "operation_tape_hash": "be1b52333f7c8452984b76e384e8faab011b91d2dc3033f14a10763d0de29c83",
+          "operation_sequence": [
+            {
+              "step_id": "observe_delayed_old",
+              "operation": "OBSERVE",
+              "arguments_hash": "639072de13ef234e778b40dc428fcb9d992829b2c550c011d220b6e7125db5c6"
+            },
+            {
+              "step_id": "observe_delayed_later",
+              "operation": "OBSERVE",
+              "arguments_hash": "e4f2128291884e754d7bc64bcf732d981b0a19e9d318aecaa6f7b24b8dc435fa"
+            },
+            {
+              "step_id": "assemble_delayed_by_cue",
+              "operation": "ASSEMBLE_BY_CUE",
+              "arguments_hash": "be38355a76e08e55e185cddf74ba586105317dabb562751fea72e4f512da88dd"
+            },
+            {
+              "step_id": "read_delayed_assembly",
+              "operation": "READ_ASSEMBLY",
+              "arguments_hash": "88bd577f4e0ba0836a03efec085e3e1e212c0457ef954847c7fa030b88db8c17"
+            },
+            {
+              "step_id": "read_delayed_old",
+              "operation": "READ_OBSERVATION",
+              "arguments_hash": "2686994622b3628ac2bab469811bf9e4e4bd27a8c7562c811df31f3fea773eb7"
+            },
+            {
+              "step_id": "read_delayed_later",
+              "operation": "READ_OBSERVATION",
+              "arguments_hash": "186f8089914ca53170095e2c4b9ca412a0dfe3944b70d91b5ed901adfcb23f93"
+            }
+          ],
+          "stale_authority_count": 0,
+          "cross_axis_mutation_count": 0,
+          "public_disclosure_count": 0,
+          "trace_mismatch_count": 0,
+          "mechanism_trace": null,
+          "mechanism_events": [],
+          "causal_step_ids": [
+            "observe_delayed_old",
+            "observe_delayed_later",
+            "assemble_delayed_by_cue",
+            "read_delayed_assembly",
+            "read_delayed_old",
+            "read_delayed_later"
+          ],
+          "causal_entity_ids": [],
+          "evaluation_preconditions_met": true,
+          "public_surface_groups_evaluated": [],
+          "sentinels_evaluated": [],
+          "preforget_public_disclosures": [],
+          "public_disclosures": []
+        },
+        {
+          "contract_id": "C04",
+          "passed": true,
+          "invariant_ids": [
+            "provenance",
+            "representation_loss_declaration"
+          ],
+          "diagnostic": "observed prosody remained distinct from an inferred emotion",
+          "operation_tape_hash": "ce8dd4b9d6e3f09366620ab54f3e001db340a38aadbba26a16c9ed12fe771124",
+          "operation_sequence": [
+            {
+              "step_id": "observe_voice_drop",
+              "operation": "OBSERVE",
+              "arguments_hash": "716b576eb7d79ab52b102632b414bb4cf6251bd6b1c3d304ab1e1491e79e4edf"
+            },
+            {
+              "step_id": "observe_voice_as_sad",
+              "operation": "OBSERVE",
+              "arguments_hash": "8ba49c0354c03d21577e67df56ee71e4083f0a2c68279cbda74bae094ed106e0"
+            }
+          ],
+          "stale_authority_count": 0,
+          "cross_axis_mutation_count": 0,
+          "public_disclosure_count": 0,
+          "trace_mismatch_count": 0,
+          "mechanism_trace": null,
+          "mechanism_events": [],
+          "causal_step_ids": [
+            "observe_voice_drop",
+            "observe_voice_as_sad"
+          ],
+          "causal_entity_ids": [],
+          "evaluation_preconditions_met": true,
+          "public_surface_groups_evaluated": [],
+          "sentinels_evaluated": [],
+          "preforget_public_disclosures": [],
+          "public_disclosures": []
+        },
+        {
+          "contract_id": "C05",
+          "passed": true,
+          "invariant_ids": [
+            "simultaneity_and_ordering",
+            "deletion_and_consent"
+          ],
+          "diagnostic": "low-frequency and low-similarity contradiction remained available",
+          "operation_tape_hash": "f8396875706af41bc0c2f0d1b1c3e315e2d1337829aa988e4708a7248961fa67",
+          "operation_sequence": [
+            {
+              "step_id": "observe_claim",
+              "operation": "OBSERVE",
+              "arguments_hash": "64d5d207f7222240161dca58d8307d9f3d957ae786ae1f28e0130bc22d749208"
+            },
+            {
+              "step_id": "observe_counter",
+              "operation": "OBSERVE",
+              "arguments_hash": "21a287c8f41f98e699f88b2700d35de327a83577ecb013e7d6ac5f5d1c3917cd"
+            },
+            {
+              "step_id": "relate_contradiction",
+              "operation": "RELATE",
+              "arguments_hash": "275bca62caebb24686c023a879ce731100c62853aadedff73596b368e60e8ea2"
+            },
+            {
+              "step_id": "prune_counter_frequency",
+              "operation": "CONSIDER_PRUNE",
+              "arguments_hash": "3d9dbbd151c10b0a17621a6f9370d8d319d13bd2dae5966e008a05078ee1a8c9"
+            },
+            {
+              "step_id": "prune_counter_similarity",
+              "operation": "CONSIDER_PRUNE",
+              "arguments_hash": "9b1a9ac945ee3785e25d298cda6f20afeffd508479600ca884a7cacaf992ac85"
+            },
+            {
+              "step_id": "read_counter",
+              "operation": "READ_OBSERVATION",
+              "arguments_hash": "8f5d4a405bb3e2943b2ef58f79860239993c5c76c2153f33a214caac7d7a02e7"
+            },
+            {
+              "step_id": "snapshot_counter",
+              "operation": "SNAPSHOT",
+              "arguments_hash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+            }
+          ],
+          "stale_authority_count": 0,
+          "cross_axis_mutation_count": 0,
+          "public_disclosure_count": 0,
+          "trace_mismatch_count": 0,
+          "mechanism_trace": null,
+          "mechanism_events": [],
+          "causal_step_ids": [
+            "observe_claim",
+            "observe_counter",
+            "relate_contradiction",
+            "prune_counter_frequency",
+            "prune_counter_similarity",
+            "read_counter",
+            "snapshot_counter"
+          ],
+          "causal_entity_ids": [],
+          "evaluation_preconditions_met": true,
+          "public_surface_groups_evaluated": [],
+          "sentinels_evaluated": [],
+          "preforget_public_disclosures": [],
+          "public_disclosures": []
+        },
+        {
+          "contract_id": "C06",
+          "passed": true,
+          "invariant_ids": [
+            "identity",
+            "restoration_and_re_presentation"
+          ],
+          "diagnostic": "storage-tier movement preserved epistemic phase",
+          "operation_tape_hash": "32b2551aa3fabf790f3426244ca564c11269a83402eb14b1e4373931201d7737",
+          "operation_sequence": [
+            {
+              "step_id": "observe_tier_phase",
+              "operation": "OBSERVE",
+              "arguments_hash": "fa4723f0d2d17c703e409b6f170a11a257ffb493227a9b178a69ef8942bafd7c"
+            },
+            {
+              "step_id": "read_tier_phase_initial",
+              "operation": "READ_OBSERVATION",
+              "arguments_hash": "69ae68c184c0d9463df0511241ebb1825af14592474bdfededd792d993e5389a"
+            },
+            {
+              "step_id": "move_tier_phase_warm",
+              "operation": "MOVE_TIER",
+              "arguments_hash": "cf4d361a3fde2d992922c58f59841eabba25c53ae3d742a6ee8a67b19e22959d"
+            },
+            {
+              "step_id": "read_tier_phase_warm",
+              "operation": "READ_OBSERVATION",
+              "arguments_hash": "69ae68c184c0d9463df0511241ebb1825af14592474bdfededd792d993e5389a"
+            },
+            {
+              "step_id": "move_tier_phase_cold",
+              "operation": "MOVE_TIER",
+              "arguments_hash": "a7cf7fdd5a209f8ab00c5f15371bdd9191bc6c12ce1cf997833aa88cb74b339b"
+            },
+            {
+              "step_id": "read_tier_phase_cold",
+              "operation": "READ_OBSERVATION",
+              "arguments_hash": "69ae68c184c0d9463df0511241ebb1825af14592474bdfededd792d993e5389a"
+            },
+            {
+              "step_id": "move_tier_phase_hot",
+              "operation": "MOVE_TIER",
+              "arguments_hash": "47f465eefee7a072a647d25c22e66918c062b6eb5bf715f89da2c9734b630cc0"
+            },
+            {
+              "step_id": "read_tier_phase_hot",
+              "operation": "READ_OBSERVATION",
+              "arguments_hash": "69ae68c184c0d9463df0511241ebb1825af14592474bdfededd792d993e5389a"
+            }
+          ],
+          "stale_authority_count": 0,
+          "cross_axis_mutation_count": 0,
+          "public_disclosure_count": 0,
+          "trace_mismatch_count": 0,
+          "mechanism_trace": null,
+          "mechanism_events": [],
+          "causal_step_ids": [
+            "move_tier_phase_warm",
+            "move_tier_phase_cold",
+            "move_tier_phase_hot"
+          ],
+          "causal_entity_ids": [
+            "obs_tier_phase"
+          ],
+          "evaluation_preconditions_met": true,
+          "public_surface_groups_evaluated": [],
+          "sentinels_evaluated": [],
+          "preforget_public_disclosures": [],
+          "public_disclosures": []
+        },
+        {
+          "contract_id": "C07",
+          "passed": true,
+          "invariant_ids": [
+            "identity",
+            "representation_loss_declaration"
+          ],
+          "diagnostic": "epistemic operations preserved canonical payload and storage tier",
+          "operation_tape_hash": "38a322812c71f08ad544d3f2a455aed8ca73fbc5067911c05802d24397a2289e",
+          "operation_sequence": [
+            {
+              "step_id": "observe_phase_ops",
+              "operation": "OBSERVE",
+              "arguments_hash": "3054436f0944fc799c9e1148cdbd85cb652c30f26cf77dc1c13d0ba278e0b54d"
+            },
+            {
+              "step_id": "move_phase_ops_warm",
+              "operation": "MOVE_TIER",
+              "arguments_hash": "9033a9efe9cf5bc31f7460940866d13d909033a61a3cf931e39661a435c6c12a"
+            },
+            {
+              "step_id": "read_phase_ops_baseline",
+              "operation": "READ_OBSERVATION",
+              "arguments_hash": "d045ab07fda4aa1d5caa0613777f7e2b953451c3108e15042c2b3c49d584bc43"
+            },
+            {
+              "step_id": "assemble_phase_ops",
+              "operation": "ASSEMBLE",
+              "arguments_hash": "03d5b2623d2bbc7724a88f54e6b485cf3804c42872f12e63ffdee4991878b226"
+            },
+            {
+              "step_id": "read_phase_ops_assembled",
+              "operation": "READ_OBSERVATION",
+              "arguments_hash": "d045ab07fda4aa1d5caa0613777f7e2b953451c3108e15042c2b3c49d584bc43"
+            },
+            {
+              "step_id": "crystallize_phase_ops",
+              "operation": "CRYSTALLIZE",
+              "arguments_hash": "104ea6c50fd30ec9c0c1d8b8b32b398104c52f15c6ce78a6464a2e21852c1c9a"
+            },
+            {
+              "step_id": "read_phase_ops_crystallized",
+              "operation": "READ_OBSERVATION",
+              "arguments_hash": "d045ab07fda4aa1d5caa0613777f7e2b953451c3108e15042c2b3c49d584bc43"
+            },
+            {
+              "step_id": "reopen_phase_ops",
+              "operation": "REOPEN",
+              "arguments_hash": "a3543f602004d83c82499036624ca5daac5dce435782717fbac8fc5bcc2c1b2d"
+            },
+            {
+              "step_id": "read_phase_ops_reopened",
+              "operation": "READ_OBSERVATION",
+              "arguments_hash": "d045ab07fda4aa1d5caa0613777f7e2b953451c3108e15042c2b3c49d584bc43"
+            }
+          ],
+          "stale_authority_count": 1,
+          "cross_axis_mutation_count": 0,
+          "public_disclosure_count": 0,
+          "trace_mismatch_count": 0,
+          "mechanism_trace": null,
+          "mechanism_events": [
+            {
+              "step_id": "reopen_phase_ops",
+              "kind": "stale_governed_view_used",
+              "mechanism": "immediate_governance_propagation",
+              "entity_ids": [
+                "ins_phase_ops"
+              ],
+              "detail": "REOPEN used the materialised insight before canonical rejection propagated"
+            }
+          ],
+          "causal_step_ids": [
+            "assemble_phase_ops",
+            "crystallize_phase_ops",
+            "reopen_phase_ops"
+          ],
+          "causal_entity_ids": [
+            "obs_phase_ops",
+            "asm_phase_ops",
+            "ins_phase_ops"
+          ],
+          "evaluation_preconditions_met": true,
+          "public_surface_groups_evaluated": [],
+          "sentinels_evaluated": [],
+          "preforget_public_disclosures": [],
+          "public_disclosures": []
+        },
+        {
+          "contract_id": "C08",
+          "passed": true,
+          "invariant_ids": [
+            "identity",
+            "correction_lineage"
+          ],
+          "diagnostic": "forced failure left canonical, phase, and audit state unchanged",
+          "operation_tape_hash": "9c4ac84c1c9e97879bcdc08c3b72d40b27719c77ee8dbca29fe076f77fe3f3e4",
+          "operation_sequence": [
+            {
+              "step_id": "observe_atomic",
+              "operation": "OBSERVE",
+              "arguments_hash": "eee5e43f7e3821c83bdedfd48ff6dd2d046a91eaa3beb47810a997f7766e8af2"
+            },
+            {
+              "step_id": "assemble_atomic",
+              "operation": "ASSEMBLE",
+              "arguments_hash": "6e2acabcab0384ce4da340e5bdd2c7264a9a62e8f5bfc32e8db74a20eba1800c"
+            },
+            {
+              "step_id": "snapshot_atomic_before",
+              "operation": "SNAPSHOT",
+              "arguments_hash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+            },
+            {
+              "step_id": "audit_atomic_before",
+              "operation": "AUDIT",
+              "arguments_hash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+            },
+            {
+              "step_id": "inject_atomic_failure",
+              "operation": "INJECT_FAILURE",
+              "arguments_hash": "75cafad32697459715101519cf75ea4973fe077ff24b3baa1f5a0e2e9cb4f829"
+            },
+            {
+              "step_id": "correct_atomic",
+              "operation": "CORRECT",
+              "arguments_hash": "5e881c094d30b81d63128351ecaec3baa62e48b12ad92ad6952a605cfacc7366"
+            },
+            {
+              "step_id": "snapshot_atomic_after",
+              "operation": "SNAPSHOT",
+              "arguments_hash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+            },
+            {
+              "step_id": "audit_atomic_after",
+              "operation": "AUDIT",
+              "arguments_hash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+            }
+          ],
+          "stale_authority_count": 0,
+          "cross_axis_mutation_count": 0,
+          "public_disclosure_count": 0,
+          "trace_mismatch_count": 0,
+          "mechanism_trace": null,
+          "mechanism_events": [],
+          "causal_step_ids": [
+            "observe_atomic",
+            "assemble_atomic",
+            "snapshot_atomic_before",
+            "audit_atomic_before",
+            "inject_atomic_failure",
+            "correct_atomic",
+            "snapshot_atomic_after",
+            "audit_atomic_after"
+          ],
+          "causal_entity_ids": [],
+          "evaluation_preconditions_met": true,
+          "public_surface_groups_evaluated": [],
+          "sentinels_evaluated": [],
+          "preforget_public_disclosures": [],
+          "public_disclosures": []
+        },
+        {
+          "contract_id": "C09",
+          "passed": false,
+          "invariant_ids": [
+            "restoration_and_re_presentation",
+            "provenance"
+          ],
+          "diagnostic": "a rejected insight remained usable or was recreated",
+          "operation_tape_hash": "b538de1693f85484cb3fdd121c062c99a46acbec805b7eb59c83d76b03933de0",
+          "operation_sequence": [
+            {
+              "step_id": "observe_reject_evidence",
+              "operation": "OBSERVE",
+              "arguments_hash": "8e7a665d526b9f1af013cdf2cb49631e44c31a772b0371e0bcc53d84ca046684"
+            },
+            {
+              "step_id": "assemble_reject",
+              "operation": "ASSEMBLE",
+              "arguments_hash": "b60bf728e1f626869972db573e6af816d3ee3245d4342a8b17a0b47006d80495"
+            },
+            {
+              "step_id": "crystallize_reject_original",
+              "operation": "CRYSTALLIZE",
+              "arguments_hash": "dcedd51f3a1414a7e1cc94083a78ca392e5863922b1ee325fbfa9c18409a05ce"
+            },
+            {
+              "step_id": "observe_rejection",
+              "operation": "OBSERVE",
+              "arguments_hash": "a253e5c01e4facdcbe2406e662fa5991f1266d6ff016c65c27e725eaebf5233d"
+            },
+            {
+              "step_id": "reject_insight",
+              "operation": "REJECT",
+              "arguments_hash": "4d4df2249c8c7c5e3916d2b17a8c108d7017b654c8ee4b1736f7a221c9054756"
+            },
+            {
+              "step_id": "reopen_rejected",
+              "operation": "REOPEN",
+              "arguments_hash": "a6228ae6543db3e1aa987ebada2e2334200aa45a4443cdf1013159e5d64a8955"
+            },
+            {
+              "step_id": "recreate_rejected",
+              "operation": "CRYSTALLIZE",
+              "arguments_hash": "aa654daf966fe559690ebfd95a3632ba9bf3037a998758fa24ee8efa367a6a57"
+            }
+          ],
+          "stale_authority_count": 2,
+          "cross_axis_mutation_count": 0,
+          "public_disclosure_count": 0,
+          "trace_mismatch_count": 0,
+          "mechanism_trace": "immediate_governance_propagation",
+          "mechanism_events": [
+            {
+              "step_id": "reject_insight",
+              "kind": "governance_update_queued_for_views",
+              "mechanism": "immediate_governance_propagation",
+              "entity_ids": [
+                "ins_reject"
+              ],
+              "detail": "canonical rejection changed immediately; materialised insights await rebuilding"
+            },
+            {
+              "step_id": "reopen_rejected",
+              "kind": "stale_governed_view_used",
+              "mechanism": "immediate_governance_propagation",
+              "entity_ids": [
+                "ins_reject"
+              ],
+              "detail": "REOPEN used the materialised insight before canonical rejection propagated"
+            },
+            {
+              "step_id": "recreate_rejected",
+              "kind": "stale_governed_view_used",
+              "mechanism": "immediate_governance_propagation",
+              "entity_ids": [
+                "ins_reject",
+                "ins_reject_recreated"
+              ],
+              "detail": "CRYSTALLIZE used a materialised insight set that had not received the canonical rejection"
+            }
+          ],
+          "causal_step_ids": [
+            "reject_insight",
+            "reopen_rejected",
+            "recreate_rejected"
+          ],
+          "causal_entity_ids": [
+            "ins_reject",
+            "ins_reject_recreated"
+          ],
+          "evaluation_preconditions_met": true,
+          "public_surface_groups_evaluated": [],
+          "sentinels_evaluated": [],
+          "preforget_public_disclosures": [],
+          "public_disclosures": []
+        },
+        {
+          "contract_id": "C10",
+          "passed": false,
+          "invariant_ids": [
+            "deletion_and_consent",
+            "provenance",
+            "restoration_and_re_presentation"
+          ],
+          "diagnostic": "11 public-surface/sentinel pairs disclosed forgotten text",
+          "operation_tape_hash": "5d2b3eb209073e4cd2562e46183976b8dcbd91b226a380d136c1cd7bdf7c44f6",
+          "operation_sequence": [
+            {
+              "step_id": "observe_secret",
+              "operation": "OBSERVE",
+              "arguments_hash": "3781a68ae5cf07ee52bd15a0fff1d24ac9200e1fc8f263d40b779a1e6c413979"
+            },
+            {
+              "step_id": "observe_secret_peer",
+              "operation": "OBSERVE",
+              "arguments_hash": "cfc80a9f67559e0e03a9f55acb770926affea26bdd4c817b7a97c0d99fe63503"
+            },
+            {
+              "step_id": "relate_secret",
+              "operation": "RELATE",
+              "arguments_hash": "35c41ea4c46a800a05c511f45d596d28c89ac95bff0a4b90b420438a3ce499f9"
+            },
+            {
+              "step_id": "assemble_secret",
+              "operation": "ASSEMBLE",
+              "arguments_hash": "d6f44034ccba9a251fd1199ba4dd0e46aa721810f43cf15065a410a1717c2dc1"
+            },
+            {
+              "step_id": "crystallize_secret",
+              "operation": "CRYSTALLIZE",
+              "arguments_hash": "6fbc200c328ce7fc4f0e885797bffa73d694d0f73611500da0d988a33b18a005"
+            },
+            {
+              "step_id": "materialise_secret_surfaces",
+              "operation": "MATERIALISE_PUBLIC_SURFACES",
+              "arguments_hash": "c5fa6fd26abe27c9466ad4795d4342a6e50a3a83e1705a10da083fddd00691b1"
+            },
+            {
+              "step_id": "read_secret_surfaces_before",
+              "operation": "READ_PUBLIC_SURFACES",
+              "arguments_hash": "c5fa6fd26abe27c9466ad4795d4342a6e50a3a83e1705a10da083fddd00691b1"
+            },
+            {
+              "step_id": "forget_secret",
+              "operation": "FORGET",
+              "arguments_hash": "15a63b44381643166fe1cda3936c102e262c3cba0bdb2aa3bf4643fddb14b9e8"
+            },
+            {
+              "step_id": "read_secret_surfaces",
+              "operation": "READ_PUBLIC_SURFACES",
+              "arguments_hash": "c5fa6fd26abe27c9466ad4795d4342a6e50a3a83e1705a10da083fddd00691b1"
+            }
+          ],
+          "stale_authority_count": 1,
+          "cross_axis_mutation_count": 0,
+          "public_disclosure_count": 11,
+          "trace_mismatch_count": 0,
+          "mechanism_trace": "immediate_governance_propagation",
+          "mechanism_events": [
+            {
+              "step_id": "forget_secret",
+              "kind": "governance_update_queued_for_views",
+              "mechanism": "immediate_governance_propagation",
+              "entity_ids": [
+                "obs_secret"
+              ],
+              "detail": "canonical forgetting changed immediately; materialised public surfaces await rebuilding"
+            },
+            {
+              "step_id": "read_secret_surfaces",
+              "kind": "stale_governed_surface_read",
+              "mechanism": "immediate_governance_propagation",
+              "entity_ids": [
+                "obs_secret",
+                "asm_secret",
+                "ins_secret"
+              ],
+              "detail": "public surfaces read a materialised bundle before canonical forgetting propagated"
+            },
+            {
+              "step_id": "read_secret_surfaces",
+              "kind": "stale_governed_view_used",
+              "mechanism": "immediate_governance_propagation",
+              "entity_ids": [
+                "obs_secret",
+                "view_search_index_obs_secret_v1"
+              ],
+              "detail": "TRACE used a materialised index before canonical governance propagated"
+            }
+          ],
+          "causal_step_ids": [
+            "forget_secret",
+            "read_secret_surfaces"
+          ],
+          "causal_entity_ids": [
+            "obs_secret",
+            "asm_secret",
+            "ins_secret"
+          ],
+          "evaluation_preconditions_met": true,
+          "public_surface_groups_evaluated": [
+            "public_snapshot",
+            "audit",
+            "observations",
+            "relations",
+            "assemblies",
+            "insights",
+            "derived_views",
+            "tokens",
+            "retrieval",
+            "traces"
+          ],
+          "sentinels_evaluated": [
+            "payloadsecret9x",
+            "speakersecret8v",
+            "observersecret7k",
+            "sourcesecret6m",
+            "relationsecret5q",
+            "cuesecret4r",
+            "insightsecret3t",
+            "uncertaintysecret2w",
+            "falsifiersecret1z"
+          ],
+          "preforget_public_disclosures": [
+            {
+              "surface_group": "public_snapshot",
+              "sentinel": "payloadsecret9x"
+            },
+            {
+              "surface_group": "public_snapshot",
+              "sentinel": "speakersecret8v"
+            },
+            {
+              "surface_group": "public_snapshot",
+              "sentinel": "observersecret7k"
+            },
+            {
+              "surface_group": "public_snapshot",
+              "sentinel": "sourcesecret6m"
+            },
+            {
+              "surface_group": "public_snapshot",
+              "sentinel": "relationsecret5q"
+            },
+            {
+              "surface_group": "public_snapshot",
+              "sentinel": "cuesecret4r"
+            },
+            {
+              "surface_group": "public_snapshot",
+              "sentinel": "insightsecret3t"
+            },
+            {
+              "surface_group": "public_snapshot",
+              "sentinel": "uncertaintysecret2w"
+            },
+            {
+              "surface_group": "public_snapshot",
+              "sentinel": "falsifiersecret1z"
+            },
+            {
+              "surface_group": "observations",
+              "sentinel": "payloadsecret9x"
+            },
+            {
+              "surface_group": "observations",
+              "sentinel": "speakersecret8v"
+            },
+            {
+              "surface_group": "observations",
+              "sentinel": "observersecret7k"
+            },
+            {
+              "surface_group": "observations",
+              "sentinel": "sourcesecret6m"
+            },
+            {
+              "surface_group": "relations",
+              "sentinel": "relationsecret5q"
+            },
+            {
+              "surface_group": "relations",
+              "sentinel": "cuesecret4r"
+            },
+            {
+              "surface_group": "assemblies",
+              "sentinel": "cuesecret4r"
+            },
+            {
+              "surface_group": "insights",
+              "sentinel": "insightsecret3t"
+            },
+            {
+              "surface_group": "insights",
+              "sentinel": "uncertaintysecret2w"
+            },
+            {
+              "surface_group": "insights",
+              "sentinel": "falsifiersecret1z"
+            },
+            {
+              "surface_group": "derived_views",
+              "sentinel": "payloadsecret9x"
+            },
+            {
+              "surface_group": "tokens",
+              "sentinel": "payloadsecret9x"
+            },
+            {
+              "surface_group": "traces",
+              "sentinel": "payloadsecret9x"
+            },
+            {
+              "surface_group": "traces",
+              "sentinel": "speakersecret8v"
+            },
+            {
+              "surface_group": "traces",
+              "sentinel": "observersecret7k"
+            },
+            {
+              "surface_group": "traces",
+              "sentinel": "sourcesecret6m"
+            },
+            {
+              "surface_group": "traces",
+              "sentinel": "uncertaintysecret2w"
+            }
+          ],
+          "public_disclosures": [
+            {
+              "surface_group": "assemblies",
+              "sentinel": "cuesecret4r"
+            },
+            {
+              "surface_group": "insights",
+              "sentinel": "insightsecret3t"
+            },
+            {
+              "surface_group": "insights",
+              "sentinel": "uncertaintysecret2w"
+            },
+            {
+              "surface_group": "insights",
+              "sentinel": "falsifiersecret1z"
+            },
+            {
+              "surface_group": "derived_views",
+              "sentinel": "payloadsecret9x"
+            },
+            {
+              "surface_group": "tokens",
+              "sentinel": "payloadsecret9x"
+            },
+            {
+              "surface_group": "traces",
+              "sentinel": "payloadsecret9x"
+            },
+            {
+              "surface_group": "traces",
+              "sentinel": "speakersecret8v"
+            },
+            {
+              "surface_group": "traces",
+              "sentinel": "observersecret7k"
+            },
+            {
+              "surface_group": "traces",
+              "sentinel": "sourcesecret6m"
+            },
+            {
+              "surface_group": "traces",
+              "sentinel": "uncertaintysecret2w"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
