@@ -433,6 +433,10 @@ export function redactRePresentableObservationFields(observation: ObservationRec
   observation.speaker = null;
   observation.observer = null;
   observation.sourceRef = null;
+  observation.sourceMaterial = null;
+  observation.synchronyGroupId = null;
+  observation.sequenceIndex = null;
+  observation.recognizerCandidates = [];
   observation.uncertainty = {
     declared: observation.uncertainty.declared,
     note: null,
@@ -446,6 +450,10 @@ export function redactForgottenObservation(observation: ObservationRecord): Obse
   observation.speaker = FORGOTTEN_TOMBSTONE;
   observation.observer = FORGOTTEN_TOMBSTONE;
   observation.sourceRef = FORGOTTEN_TOMBSTONE;
+  observation.sourceMaterial = null;
+  observation.synchronyGroupId = null;
+  observation.sequenceIndex = null;
+  observation.recognizerCandidates = [];
   observation.uncertainty = {
     declared: observation.uncertainty.declared,
     note: null,

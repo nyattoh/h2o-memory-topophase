@@ -82,6 +82,22 @@ export interface TemporalRange {
   end: IsoTime;
 }
 
+export type SourceMediaType = "audio" | "video" | "image" | "sensor" | "text" | "structured";
+
+/** Stable reference to source material. Media bytes remain outside the canonical record. */
+export interface SourceMaterialRef {
+  mediaType: SourceMediaType;
+  contentHash: string;
+  locator: string;
+}
+
+/** One explicitly uncertain output from a recognizer, ordered by array position. */
+export interface RecognizerCandidate {
+  candidateId: string;
+  value: string;
+  confidence: number;
+}
+
 export interface TemporalValidity {
   validFrom: IsoTime;
   validTo: IsoTime | null;
@@ -116,6 +132,10 @@ export interface ObservationRecord {
   speaker: string | null;
   observer: string | null;
   sourceRef: string | null;
+  sourceMaterial: SourceMaterialRef | null;
+  synchronyGroupId: string | null;
+  sequenceIndex: number | null;
+  recognizerCandidates: RecognizerCandidate[];
   consent: ConsentScope;
   uncertainty: UncertaintyRecord;
   /** Derived from assembly and insight candidates that still reference this observation. */
@@ -258,10 +278,20 @@ export interface ObserveInput {
   speaker?: string | null;
   observer?: string | null;
   sourceRef?: string | null;
+  sourceMaterial?: SourceMaterialRef | null;
+  synchronyGroupId?: string | null;
+  sequenceIndex?: number | null;
+  recognizerCandidates?: RecognizerCandidate[];
   consent?: ConsentScope;
   uncertainty?: Partial<UncertaintyRecord>;
   epistemicPhase?: EpistemicPhase;
   storageTier?: StorageTier;
+}
+
+export interface TimelineQuery {
+  synchronyGroupId?: string;
+  start?: IsoTime;
+  end?: IsoTime;
 }
 
 export interface RelateInput {

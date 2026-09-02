@@ -2,6 +2,9 @@ import { InvariantError } from "./errors.js";
 import { coldKey } from "./state.js";
 import type { EngineState, EpistemicPhase, ObservationRecord } from "./types.js";
 
+const SHA256_PATTERN = /^sha256:[0-9a-f]{64}$/;
+const SYNCHRONY_GROUP_PATTERN = /^[A-Za-z0-9._:-]{1,128}$/;
+
 export function currentObservation(
   state: EngineState,
   observationId: string
@@ -61,6 +64,7 @@ export function syncObservationPhases(state: EngineState, observationIds?: Itera
 export function assertInvariants(state: EngineState): void {
   assertIdentity(state);
   assertProvenance(state);
+  assertCanonicalObservationMetadata(state);
   assertTemporalValidity(state);
   assertCorrectionLineage(state);
   assertDeletionAndConsent(state);
@@ -105,11 +109,15 @@ function assertIdentity(state: EngineState): void {
 function assertProvenance(state: EngineState): void {
   for (const versions of state.observations.values()) {
     for (const row of versions) {
-      const hasActor = row.speaker !== null || row.observer !== null || row.sourceRef !== null;
+      const hasActor =
+        row.speaker !== null ||
+        row.observer !== null ||
+        row.sourceRef !== null ||
+        row.sourceMaterial !== null;
       if (!hasActor) {
         throw new InvariantError(
           "provenance",
-          `observation ${row.observationId} v${row.version} lacks speaker, observer, and sourceRef`
+          `observation ${row.observationId} v${row.version} lacks speaker, observer, sourceRef, and sourceMaterial`
         );
       }
       if (row.kind === "user_self_report" && row.speaker === null) {
@@ -123,6 +131,80 @@ function assertProvenance(state: EngineState): void {
           "provenance",
           `recognizer candidate ${row.observationId} requires an observer`
         );
+      }
+    }
+  }
+}
+
+function assertCanonicalObservationMetadata(state: EngineState): void {
+  for (const versions of state.observations.values()) {
+    for (const row of versions) {
+      if (row.sourceMaterial !== null) {
+        if (!SHA256_PATTERN.test(row.sourceMaterial.contentHash)) {
+          throw new InvariantError(
+            "provenance",
+            `source material for ${row.observationId} v${row.version} requires a lowercase sha256 digest`
+          );
+        }
+        if (row.sourceMaterial.locator.trim().length === 0) {
+          throw new InvariantError(
+            "provenance",
+            `source material for ${row.observationId} v${row.version} requires a locator`
+          );
+        }
+      }
+      if (
+        row.synchronyGroupId !== null &&
+        !SYNCHRONY_GROUP_PATTERN.test(row.synchronyGroupId)
+      ) {
+        throw new InvariantError(
+          "simultaneity_and_ordering",
+          `invalid synchrony group on ${row.observationId} v${row.version}`
+        );
+      }
+      if (row.sequenceIndex !== null) {
+        if (
+          row.synchronyGroupId === null ||
+          !Number.isInteger(row.sequenceIndex) ||
+          row.sequenceIndex < 0
+        ) {
+          throw new InvariantError(
+            "simultaneity_and_ordering",
+            `sequence index on ${row.observationId} v${row.version} requires a synchrony group and a non-negative integer`
+          );
+        }
+      }
+      if (row.kind !== "recognizer_candidate" && row.recognizerCandidates.length > 0) {
+        throw new InvariantError(
+          "representation_loss_declaration",
+          `recognizer candidates on ${row.observationId} v${row.version} must use the recognizer_candidate record kind`
+        );
+      }
+      const candidateIds = new Set<string>();
+      for (const candidate of row.recognizerCandidates) {
+        if (candidate.candidateId.trim().length === 0 || candidate.value.trim().length === 0) {
+          throw new InvariantError(
+            "uncertainty",
+            `recognizer candidate on ${row.observationId} v${row.version} requires an ID and value`
+          );
+        }
+        if (candidateIds.has(candidate.candidateId)) {
+          throw new InvariantError(
+            "uncertainty",
+            `duplicate recognizer candidate ${candidate.candidateId} on ${row.observationId} v${row.version}`
+          );
+        }
+        candidateIds.add(candidate.candidateId);
+        if (
+          !Number.isFinite(candidate.confidence) ||
+          candidate.confidence < 0 ||
+          candidate.confidence > 1
+        ) {
+          throw new InvariantError(
+            "uncertainty",
+            `recognizer confidence on ${row.observationId} v${row.version} must be between zero and one`
+          );
+        }
       }
     }
   }

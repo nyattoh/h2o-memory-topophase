@@ -29,6 +29,20 @@ The canonical source is an observation or event, not text, an embedding, a summa
 
 Derived text, summary, vector, graph, token, and search-index views must record their source versions and become unusable when stale. The reference implementation does not need to calculate embeddings.
 
+## Approved H2O Core Stage A scope
+
+Stage A extends the canonical observation contract without changing any fixed v0.5-v0.8 artifact, measurement, threshold, exclusion rule, or preregistered condition. It must:
+
+- preserve pre-transcription speech, pause, overlap, prosody, and gesture observations as first-class canonical records;
+- bind observations to a time range, synchronization group, stable source-material reference, and SHA-256 content digest;
+- preserve ordered recognizer candidates and confidence values only in `recognizer_candidate` records;
+- keep observed evidence, recognizer candidates, user self-reports, and system inferences as distinct record kinds;
+- provide deterministic time-aligned retrieval without converting non-verbal measurements into emotions, intentions, or cultural meanings;
+- demonstrate round-trip preservation with synthetic audio-feature and gesture fixtures;
+- reject invalid time ranges, invalid source digests, invalid confidence values, and interpretation fields attached to observed evidence.
+
+Source media bytes are not required for the offline test suite. A source-material locator is an opaque local reference, not an authority for the observation and not a public URL requirement.
+
 ## Independent state axes
 
 `epistemic_phase`:

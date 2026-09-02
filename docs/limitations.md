@@ -8,6 +8,21 @@ This is an in-memory reference prototype. It is not a release candidate and not 
 - **Untested resource effects.** This repository does not measure or claim token reduction, physical RAM reduction, energy reduction, or any phase-specific resource effect.
 - **No independent review.** The prototype has not been independently reviewed. **Keenable is unreviewed (未査読)** and is not used here as a reviewer, oracle, or dependency.
 - **No embeddings or recognizers.** Vector views are explicit non-computed stubs. Prosody and gesture fields are stored as typed data, not recognized by a model.
+- **Stage A stores references, not media bytes.** Synthetic observations may carry
+  an opaque original-material locator and SHA-256 digest. The prototype does not
+  capture, decode, preserve, or replay audio, video, images, or sensor streams.
+- **No autonomous gathering or learned crystallization.** Existing assembly and
+  insight operations are explicit deterministic controls. The engine does not
+  independently seek weak old fragments, detect a sudden realization, or learn
+  what to gather and when to crystallize.
+- **Not model-internal memory.** This remains an application-level reference
+  engine and is not integrated into attention, recurrent state, activations, or
+  trainable model parameters.
+- **Safety simulator is only a later application hypothesis.** A separate
+  synthetic experiment may test provenance confusion, biased retrieval,
+  premature crystallization, and correction-propagation failure after the core
+  mechanisms exist. This prototype does not simulate a disease, diagnosis,
+  treatment, patient, or clinical outcome.
 - **RESTORE is current-version only.** Historical cold payloads remain for lineage and cannot be promoted to current. Restore may rehydrate when `retrieve` remains; it refuses forgotten, corrected, expired, and fully withdrawn records. A successful restore does not grant re-presentation permission and returns a placement DTO rather than an `ObservationRecord`.
 - **Assembly and insight candidate restore is unimplemented.** Moving those candidates to `cold` hides free text on public reads and keeps `storageTier` as a diagnostic. There is no restore operation for them in this prototype.
 - **Consent re-grant is unimplemented.** `WITHDRAW_CONSENT` only reduces the current use set. Public reads apply that effective set to every version of the observation.

@@ -10,14 +10,37 @@ A canonical observation stores:
 
 - stable `observationId` and integer `version`
 - occurrence time, optional time span, and temporal validity
-- speaker, observer, source reference, and consent scope
+- speaker, observer, source reference, consent scope, and an optional opaque
+  `sourceMaterial` reference (`mediaType`, SHA-256 digest, locator)
+- optional `synchronyGroupId` and non-negative `sequenceIndex` for preserving
+  aligned observations without flattening them into a transcript
 - kind: `observed_evidence` | `recognizer_candidate` | `user_self_report` | `system_inference`
 - typed payload (`speech`, `pause`, `overlap`, `prosody`, `gesture`, `structured`, `other`); non-verbal kinds are closed measurements, and interpretation is a separate record kind
-- uncertainty and optional recognizer confidence
+- uncertainty and optional recognizer alternatives; each alternative has a
+  stable candidate ID, candidate value, and confidence in the closed interval
+  from zero to one
 - independent `epistemic_phase` and `storage_tier` (observation phase is derived from assembly/insight candidates)
 - current / corrected / forgotten / consent-withdrawn flags
 
 Corrections append a new version and a `correction` relation. Old versions remain in lineage and cannot become current by implication.
+
+## H2O Core Stage A boundary
+
+`ingestTimedObservationSequence` accepts already measured synthetic observation
+records and appends `simultaneity` relations for members of the same synchrony
+group. `timeline` returns current, presentable canonical observations, filters by
+an overlapping time window or synchrony group, and preserves the declared order
+inside a group. It does not transcribe, classify, or infer emotion or intention.
+
+The original media bytes are outside this prototype. The canonical record keeps
+an opaque locator and SHA-256 digest so a later storage implementation can verify
+identity without treating a transcript, summary, vector, or graph as the source
+of record. Fixtures are synthetic and contain no personal dialogue.
+
+Stage A does not implement autonomous fragment gathering, sudden insight
+crystallisation, learned phase control, or integration into model computation.
+The existing deterministic `ASSEMBLE` and `CRYSTALLIZE` operations are explicit
+test controls, not evidence that those later mechanisms have been built.
 
 ## Derived views
 

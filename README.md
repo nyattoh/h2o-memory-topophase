@@ -19,12 +19,20 @@ Changing storage placement must not silently change epistemic status. Correction
 
 ## Current status
 
+- H2O Core Stage A implemented: synthetic, time-aligned speech, prosody, pause,
+  overlap, gesture, and recognizer-candidate observations can be retained before
+  transcription as canonical records.
 - In-memory TypeScript reference engine on Node.js 22.
 - Deterministic offline tests; no LLM, embedding service, vector database, browser, cloud, or network dependency.
 - Canonical observation and event model with typed non-text evidence.
 - Independent epistemic and storage axes.
 - Append-only audit history for correction, refusal, consent, forgetting, reopening, and restoration operations.
 - Explicit negative tests for stale views, revived corrections, inferred emotion, lost contradiction, and partial mutation.
+
+Stage A stores typed observation metadata and an opaque reference plus digest for
+the original material. It does not store or recognise media bytes. Autonomous
+fragment gathering, sudden insight crystallisation, learned phase control, and
+model-internal memory remain later stages, not current results.
 
 Keenable independent review is **not complete**. Keenable is not a dependency of this prototype.
 
@@ -56,6 +64,12 @@ It does not claim:
 - publication readiness or independent review.
 
 The intended contribution is presently a falsifiable design hypothesis and an inspectable reference implementation.
+
+After those later stages are implemented, the architecture may also be applicable
+to a separate synthetic safety simulator for testing how provenance confusion,
+confirmation-biased retrieval, premature crystallisation, or failed correction
+propagation can stabilise false conclusions. That is a future research possibility,
+not a clinical simulation or a demonstrated application.
 
 ## Documents
 

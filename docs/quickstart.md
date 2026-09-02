@@ -34,6 +34,21 @@ Expected shape of the printed JSON:
 
 Those two axes are independent: you can later `MOVE_TIER` without changing phase, or `REOPEN` without changing storage placement.
 
+## Stage A multimodal observation test
+
+The deterministic fixture in `test/fixtures/multimodal-sequence.ts` contains
+time-aligned synthetic speech, prosody, gesture, pause, overlap, and recognizer
+alternatives. It verifies that these observations remain separate canonical
+records before transcription and that their declared synchrony and provenance
+survive a round trip.
+
+```bash
+npm test
+```
+
+This test does not process media. `sourceMaterial.locator` is opaque and its
+SHA-256 digest is validated syntactically; the referenced bytes are not read.
+
 ## Use from code
 
 ```ts

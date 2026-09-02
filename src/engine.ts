@@ -62,6 +62,7 @@ import type {
   RestorePlacementResult,
   RetrieveInput,
   RetrievalHit,
+  TimelineQuery,
   TraceInput,
   UncertaintyRecord,
   WithdrawConsentInput
@@ -92,6 +93,56 @@ export class MemoryEngine {
 
   auditLog(): AuditEntry[] {
     return this.state.audit.map((entry) => structuredClone(entry));
+  }
+
+  timeline(query: TimelineQuery = {}): ObservationRecord[] {
+    const at = this.clock.now();
+    const rows: ObservationRecord[] = [];
+    for (const versions of this.state.observations.values()) {
+      const row = versions.find((item) => item.current);
+      if (!row || !observationBodyPubliclyVisible(this.state, row, at)) {
+        continue;
+      }
+      if (query.synchronyGroupId !== undefined && row.synchronyGroupId !== query.synchronyGroupId) {
+        continue;
+      }
+      const start = row.timeSpan?.start ?? row.occurrenceTime;
+      const end = row.timeSpan?.end ?? row.occurrenceTime;
+      if (query.start !== undefined && end < query.start) {
+        continue;
+      }
+      if (query.end !== undefined && start > query.end) {
+        continue;
+      }
+      rows.push(toPublicObservation(this.state, row, at));
+    }
+    return rows.sort((left, right) => {
+      if (
+        left.synchronyGroupId !== null &&
+        left.synchronyGroupId === right.synchronyGroupId
+      ) {
+        const groupSequenceOrder =
+          (left.sequenceIndex ?? Number.MAX_SAFE_INTEGER) -
+          (right.sequenceIndex ?? Number.MAX_SAFE_INTEGER);
+        if (groupSequenceOrder !== 0) {
+          return groupSequenceOrder;
+        }
+      }
+
+      const leftStart = left.timeSpan?.start ?? left.occurrenceTime;
+      const rightStart = right.timeSpan?.start ?? right.occurrenceTime;
+      const timeOrder = leftStart.localeCompare(rightStart);
+      if (timeOrder !== 0) {
+        return timeOrder;
+      }
+      const sequenceOrder =
+        (left.sequenceIndex ?? Number.MAX_SAFE_INTEGER) -
+        (right.sequenceIndex ?? Number.MAX_SAFE_INTEGER);
+      if (sequenceOrder !== 0) {
+        return sequenceOrder;
+      }
+      return left.observationId.localeCompare(right.observationId);
+    });
   }
 
   injectFailure(point: FailurePoint): void {
@@ -372,6 +423,10 @@ export class MemoryEngine {
           speaker: previous.speaker,
           observer: previous.observer,
           sourceRef: previous.sourceRef,
+          sourceMaterial: previous.sourceMaterial,
+          synchronyGroupId: previous.synchronyGroupId,
+          sequenceIndex: previous.sequenceIndex,
+          recognizerCandidates: previous.recognizerCandidates,
           consent: structuredClone(previous.consent),
           uncertainty: input.uncertainty ?? previous.uncertainty,
           epistemicPhase: previous.epistemicPhase,
@@ -780,6 +835,10 @@ export class MemoryEngine {
       speaker: input.speaker ?? null,
       observer: input.observer ?? null,
       sourceRef: input.sourceRef ?? null,
+      sourceMaterial: input.sourceMaterial ? structuredClone(input.sourceMaterial) : null,
+      synchronyGroupId: input.synchronyGroupId ?? null,
+      sequenceIndex: input.sequenceIndex ?? null,
+      recognizerCandidates: structuredClone(input.recognizerCandidates ?? []),
       consent: {
         permittedUses: assertConsentUses(
           input.consent?.permittedUses ?? DEFAULT_CONSENT_USES,
@@ -799,10 +858,15 @@ export class MemoryEngine {
   }
 
   private assertProvenanceOnCreate(record: ObservationRecord): void {
-    if (record.speaker === null && record.observer === null && record.sourceRef === null) {
+    if (
+      record.speaker === null &&
+      record.observer === null &&
+      record.sourceRef === null &&
+      record.sourceMaterial === null
+    ) {
       throw new OperationError(
         "OBSERVE",
-        "speaker, observer, or sourceRef is required",
+        "speaker, observer, sourceRef, or sourceMaterial is required",
         "provenance"
       );
     }
