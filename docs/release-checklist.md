@@ -1,39 +1,39 @@
-# v0.1.0-alpha release checklist
+# v0.2.0-alpha release checklist
 
-This checklist governs the first public candidate. Completing local preparation does not authorise publication.
+This checklist governs the Stage A-C OSS and technical-report boundary.
 
-## Fixed identity and licence
+## Fixed identity and licences
 
 - [x] Author: Ryoko Sakakibara
 - [x] Affiliation: Independent Researcher
 - [x] ORCID: 0009-0009-9544-6315
-- [x] Licence: Apache-2.0
-- [x] Candidate version: v0.1.0-alpha
+- [x] Source-code licence: Apache-2.0
+- [x] Technical-report licence: CC BY 4.0
+- [x] Candidate version: v0.2.0-alpha
 
 ## Required local gates
 
-- [x] All 63 deterministic tests pass without network access.
+- [x] All 92 deterministic tests pass without network access.
 - [x] Type checking and build pass.
-- [x] The five-minute quick start is reproduced from a clean installation.
-- [x] The distributable file list contains only intended public files.
+- [x] The demonstration passes.
+- [x] `gate.sh` returns exit code zero.
+- [x] The v0.2.0-alpha distributable file list is inspected with `npm pack --dry-run`.
+- [x] The generated five-page PDF is rendered to images and visually inspected.
 - [x] Licence, secret, personal-information, and prohibited-claim scans pass.
-- [x] `docs/publication-manifest.md` and `THIRD_PARTY_NOTICES.md` match the candidate contents.
-- [x] The public candidate preserves the fixed v0.5-v0.7 evidence boundary.
-- [x] Keenable status is stated accurately as incomplete.
+- [x] The fixed v0.8 `FAIL` result and its limitations remain explicit.
+- [x] The untracked v0.8.1 material remains outside this release.
 
-Local verification was completed on 2026-09-01 JST from a Git-free copy with freshly installed locked dependencies. `npm test`, `npm run typecheck`, `npm run build`, `npm run demo`, and `npm pack --dry-run` all completed successfully. External publication gates below remain open.
+## External publication actions
 
-## Publication boundaries
-
-- [ ] Create a fresh public history with a privacy-safe commit identity; do not publish the current local Git history.
-- [ ] Re-run all gates against the fresh-history export and compare its content hashes with this candidate.
-- [ ] Obtain the author's final explicit approval before creating a public repository or pushing any content.
-- [ ] Add a public repository URL only after the repository exists.
-- [ ] Add a release date, archive record, or DOI only after the corresponding publication exists.
-- [ ] Keep npm publication deferred; `private: true` is intentional for this candidate.
+- [ ] Push the verified branch or equivalent release commit to the existing public repository.
+- [ ] Create the GitHub pre-release tag `v0.2.0-alpha` using `docs/release-notes-v0.2.0-alpha.md`.
+- [ ] Confirm that Zenodo archives the new software version and assigns its version DOI.
+- [ ] Create a separate Zenodo Publication / Technical note record using `docs/zenodo-paper-metadata.md` and upload the verified PDF.
+- [ ] Add assigned DOIs only after each Zenodo record exists.
 
 ## Evidence and submission cautions
 
-- Keenable independent review is incomplete and must not be represented as complete.
-- The prototype does not establish novelty, superiority, a physical phase transition, a mathematical topological invariant, or general reductions in tokens, latency, physical memory, cost, or energy.
-- Any later anonymous submission package must be prepared separately from this named public candidate and checked against the selected venue's current policy.
+- The prototype has not completed independent review.
+- The report is a technical report and falsifiable design baseline, not a claim of peer review.
+- The prototype does not establish novelty, superiority, a physical phase transition, a mathematical topological invariant, accessibility benefit, or general reductions in tokens, latency, physical memory, cost, or energy.
+- Any future anonymous venue submission must be prepared separately and checked against that venue's then-current policy.

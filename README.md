@@ -1,10 +1,13 @@
 # H2O Memory: TopoPhase reference prototype
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22212460.svg)](https://doi.org/10.5281/zenodo.22212460)
+[![Archived v0.1 DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22212460.svg)](https://doi.org/10.5281/zenodo.22212460)
 
 H2O Memory explores an AI memory architecture in which canonical observations remain auditable while epistemic formation and storage placement are controlled independently. This repository contains the minimum falsifiable TypeScript reference prototype for that research direction.
 
-The current release is `v0.1.0-alpha`. It is experimental software, not a production database and not evidence that the proposed architecture is novel or resource-efficient.
+The current public release is `v0.1.0-alpha`. This branch is the verified
+`v0.2.0-alpha` candidate that adds the bounded H2O Core Stage A-C baselines.
+It is experimental software, not a production database and not evidence that
+the proposed architecture is novel or resource-efficient.
 
 ## Why this exists
 
@@ -87,6 +90,8 @@ not a clinical simulation or a demonstrated application.
 - [`docs/limitations.md`](docs/limitations.md) — known technical and evidential limits
 - [`docs/release-checklist.md`](docs/release-checklist.md) — local gates and publication boundaries
 - [`docs/publication-manifest.md`](docs/publication-manifest.md) — reviewed public inclusion and exclusion scope
+- [`paper/h2o-memory-new-ai-memory-architecture-v0.2.0-alpha.md`](paper/h2o-memory-new-ai-memory-architecture-v0.2.0-alpha.md) — technical report source with English and Japanese abstracts
+- [`output/pdf/h2o-memory-new-ai-memory-architecture-v0.2.0-alpha.pdf`](output/pdf/h2o-memory-new-ai-memory-architecture-v0.2.0-alpha.pdf) — rendered technical report candidate
 - [`CONTRIBUTING.md`](CONTRIBUTING.md) — contribution rules and verification gates
 - [`THIRD_PARTY_NOTICES.md`](THIRD_PARTY_NOTICES.md) — dependency and material provenance ledger
 - [`SECURITY.md`](SECURITY.md) — private vulnerability-reporting policy
@@ -95,9 +100,11 @@ not a clinical simulation or a demonstrated application.
 
 Use the metadata in [`CITATION.cff`](CITATION.cff):
 
-> Ryoko Sakakibara. *H2O Memory: TopoPhase Reference Prototype*. Version 0.1.0-alpha. Independent Researcher. [https://doi.org/10.5281/zenodo.22212460](https://doi.org/10.5281/zenodo.22212460). ORCID: [0009-0009-9544-6315](https://orcid.org/0009-0009-9544-6315).
+> Ryoko Sakakibara. *H2O Memory: TopoPhase Reference Prototype*. Version 0.2.0-alpha. Independent Researcher. ORCID: [0009-0009-9544-6315](https://orcid.org/0009-0009-9544-6315).
 
-The DOI above identifies the archived software release. No paper DOI has been assigned.
+The badge DOI identifies the archived `v0.1.0-alpha` software release. A new
+version DOI and a paper DOI have not yet been assigned; neither is invented in
+the candidate metadata.
 
 ## Licence
 

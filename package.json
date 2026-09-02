@@ -1,6 +1,6 @@
 {
   "name": "h2o-memory-topophase-prototype",
-  "version": "0.1.0-alpha",
+  "version": "0.2.0-alpha",
   "private": true,
   "description": "Minimum falsifiable reference prototype for the H2O Memory TopoPhase architecture hypothesis.",
   "type": "module",
