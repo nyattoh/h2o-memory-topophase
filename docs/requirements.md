@@ -94,6 +94,20 @@ Add positive tests for each operation and invariant where needed. Map every nega
 - A comparison note that states only operation-level hypotheses versus CogniFold-style cognitive folding. It must not claim superiority or novelty. At minimum compare immutable episodic traces, crystallization target, bidirectional reopening, user correction and refusal, consent withdrawal, non-text observations, and storage-tier independence.
 - A limitations section covering the in-memory prototype, missing concurrency and durability guarantees, untested scale, untested resource effects, and absence of independent review.
 
+## v0.8 contract benchmark
+
+The repository may include one deterministic, offline mechanism-removal benchmark that evaluates the operation contracts above. It is a separate v0.8 experiment and must not modify or reinterpret any fixed v0.5-v0.7 artefact, measurement, threshold, exclusion rule, or pre-registered condition.
+
+The benchmark must compare the complete engine with exactly three counterfactual conditions:
+
+- `derived_authority`: derived text, summary, or index state remains authoritative when the canonical source has become invalid;
+- `coupled_axes`: epistemic phase and storage tier form one coupled lifecycle;
+- `delayed_governance`: correction, rejection, consent withdrawal, and forgetting reach existing derived views, assemblies, and insights only after explicit rebuilding.
+
+All four conditions must receive the same fixture inputs, clock sequence, identifiers, and public operation sequence. A counterfactual condition is admissible only when its ordinary positive controls pass, every contract outside its declared removal scope passes, at least one pre-specified target contract fails, and the failure is attributable to the removed mechanism.
+
+The benchmark must contain ten semantically distinct contracts: the eight required negative tests above, rejected-insight non-revival, and forgotten-text non-disclosure across public surfaces. It must report contract passes, positive-control passes, stale-authority uses, cross-axis mutations, public disclosures, and trace mismatches. Results are evidence only for the specified synthetic contracts. They must not be described as evidence of general utility, novelty, superiority, token reduction, physical-memory reduction, or energy reduction.
+
 ## Objective completion gates
 
 - `npm test` succeeds offline.

@@ -1,0 +1,105 @@
+{
+  "benchmark_id": "h2o-v0.8-contract",
+  "version": "1.0.0-preregistered",
+  "fixed_at_jst": "2026-09-01T20:51:51+09:00",
+  "runtime": "node-22",
+  "network_allowed": false,
+  "paid_api_allowed": false,
+  "random_seed": 20260901,
+  "conditions": [
+    {
+      "id": "h2o_complete",
+      "removed_mechanism": null
+    },
+    {
+      "id": "derived_authority",
+      "removed_mechanism": "canonical_source_authority"
+    },
+    {
+      "id": "coupled_axes",
+      "removed_mechanism": "independent_epistemic_and_storage_axes"
+    },
+    {
+      "id": "delayed_governance",
+      "removed_mechanism": "immediate_governance_propagation"
+    }
+  ],
+  "contracts": [
+    {
+      "id": "C01",
+      "target_conditions": [
+        "derived_authority"
+      ]
+    },
+    {
+      "id": "C02",
+      "target_conditions": [
+        "derived_authority",
+        "delayed_governance"
+      ]
+    },
+    {
+      "id": "C03",
+      "target_conditions": []
+    },
+    {
+      "id": "C04",
+      "target_conditions": []
+    },
+    {
+      "id": "C05",
+      "target_conditions": []
+    },
+    {
+      "id": "C06",
+      "target_conditions": [
+        "coupled_axes"
+      ]
+    },
+    {
+      "id": "C07",
+      "target_conditions": [
+        "coupled_axes"
+      ]
+    },
+    {
+      "id": "C08",
+      "target_conditions": []
+    },
+    {
+      "id": "C09",
+      "target_conditions": [
+        "delayed_governance"
+      ]
+    },
+    {
+      "id": "C10",
+      "target_conditions": [
+        "delayed_governance"
+      ]
+    }
+  ],
+  "metrics": [
+    "contract_pass_count",
+    "ordinary_control_pass_count",
+    "stale_authority_count",
+    "cross_axis_mutation_count",
+    "public_disclosure_count",
+    "trace_mismatch_count"
+  ],
+  "complete_acceptance": {
+    "contract_pass_count": 10,
+    "ordinary_controls_all_pass": true,
+    "stale_authority_count": 0,
+    "cross_axis_mutation_count": 0,
+    "public_disclosure_count": 0,
+    "trace_mismatch_count": 0
+  },
+  "counterfactual_admissibility": {
+    "ordinary_controls_all_pass": true,
+    "non_target_contracts_all_pass": true,
+    "minimum_target_contract_failures": 1,
+    "failures_must_trace_to_removed_mechanism": true
+  },
+  "claim_boundary": "Synthetic contract conformance only; no claim of general utility, novelty, superiority, retrieval quality, multimodal benefit, token reduction, physical-memory reduction, or energy reduction."
+}
