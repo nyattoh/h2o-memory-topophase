@@ -25,6 +25,9 @@ Changing storage placement must not silently change epistemic status. Correction
 - H2O Core Stage B fixed baseline implemented: a newly arrived typed cue can
   automatically assemble old canonical fragments, while preserving linked
   contradiction evidence and respecting current consent.
+- H2O Core Stage C fixed metric baseline implemented: a controller distinguishes
+  gradual accumulation from a simultaneous jump in support density and drop in
+  prediction error, then records formation metrics and counterevidence.
 - In-memory TypeScript reference engine on Node.js 22.
 - Deterministic offline tests; no LLM, embedding service, vector database, browser, cloud, or network dependency.
 - Canonical observation and event model with typed non-text evidence.
@@ -35,8 +38,9 @@ Changing storage placement must not silently change epistemic status. Correction
 Stage A stores typed observation metadata and an opaque reference plus digest for
 the original material. It does not store or recognise media bytes. Stage B uses
 pre-existing typed cue relations; it does not learn cue representations or infer
-relations from raw observations. Sudden insight crystallisation, learned phase
-control, and model-internal memory remain later stages, not current results.
+relations from raw observations. Stage C uses fixed thresholds supplied by the
+experiment and does not learn what to gather or when to crystallise. Learned
+phase control and model-internal memory remain next-phase work, not current results.
 
 Keenable independent review is **not complete**. Keenable is not a dependency of this prototype.
 
@@ -69,7 +73,7 @@ It does not claim:
 
 The intended contribution is presently a falsifiable design hypothesis and an inspectable reference implementation.
 
-After those later stages are implemented, the architecture may also be applicable
+In the next phase, the architecture may also be applicable
 to a separate synthetic safety simulator for testing how provenance confusion,
 confirmation-biased retrieval, premature crystallisation, or failed correction
 propagation can stabilise false conclusions. That is a future research possibility,

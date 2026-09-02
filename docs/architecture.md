@@ -57,6 +57,28 @@ requires cue relations to exist already and does not infer them from content.
 controls for the fixed synthetic case. No embedding model, LLM, vector database,
 network call, or paid API is used.
 
+## H2O Core Stage C fixed metric baseline
+
+`SuddenCrystallizationController.observe` receives a time-ordered synthetic
+measurement of evidence IDs, support density, and prediction error. A candidate
+is formed only after a previous sample exists and all fixed conditions hold:
+
+- evidence count is at least `minEvidence`;
+- support density is at least `minSupportDensity`;
+- the density increase is at least `minDensityDelta`;
+- the prediction-error decrease is at least `minPredictionErrorDrop`.
+
+The controller records the formation time and four measurements on the insight,
+pins directly linked contradiction and potential-falsifier observations as
+counterevidence, and relies on the existing correction contract to invalidate a
+formed candidate when supporting evidence changes. `evaluateCrystallizationTiming`
+separates premature, late, missed, and on-time detection.
+
+This is a deterministic comparison mechanism. The measurements are supplied by
+the test fixture, the thresholds do not learn, and the controller does not model
+human realisation, a physical phase transition, or a mathematical topological
+invariant.
+
 ## Derived views
 
 `text`, `summary`, `vector`, `graph`, `token`, and `search_index` are replaceable indexes. They are generated only when the source observation permits `derive`. Each view records source versions and declares representation loss. A view is unusable when stale, forgotten, consent-blocked, or outside its temporal window. The vector view is a non-computed stub (`scheme: "none"`).

@@ -315,6 +315,26 @@ function assertUncertainty(state: EngineState): void {
         throw new InvariantError("uncertainty", `insight ${insight.insightId} lacks falsification conditions`);
       }
     }
+    if (insight.formation !== undefined) {
+      if (!Number.isFinite(Date.parse(insight.formation.at))) {
+        throw new InvariantError(
+          "temporal_validity",
+          `insight ${insight.insightId} has an invalid formation time`
+        );
+      }
+      const bounded = [
+        insight.formation.supportDensity,
+        insight.formation.densityDelta,
+        insight.formation.predictionError,
+        insight.formation.predictionErrorDrop
+      ];
+      if (bounded.some((value) => !Number.isFinite(value) || value < 0 || value > 1)) {
+        throw new InvariantError(
+          "uncertainty",
+          `insight ${insight.insightId} has an invalid formation metric`
+        );
+      }
+    }
   }
   for (const versions of state.observations.values()) {
     for (const row of versions) {

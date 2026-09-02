@@ -14,8 +14,12 @@ This is an in-memory reference prototype. It is not a release candidate and not 
 - **Stage B is a typed-relation baseline, not learned association.** A new cue can
   automatically activate old fragments through relations that already exist.
   The engine does not infer those relations from raw observations, learn cue
-  representations, detect a sudden realisation, or learn what to gather and when
-  to crystallise.
+  representations, or learn what to gather.
+- **Stage C is a fixed metric baseline, not learned insight formation.** Synthetic
+  samples provide support density and prediction error. Fixed thresholds detect
+  an abrupt crossing and record its time and measurements. The engine does not
+  calculate those measurements from raw observations, learn the thresholds,
+  reproduce human realisation, or establish a physical phase transition.
 - **Not model-internal memory.** This remains an application-level reference
   engine and is not integrated into attention, recurrent state, activations, or
   trainable model parameters.

@@ -276,6 +276,9 @@ export class MemoryEngine {
       if (input.falsificationConditions.length === 0) {
         throw new OperationError("CRYSTALLIZE", "insight requires falsification conditions", "uncertainty");
       }
+      if (input.formation !== undefined) {
+        this.assertCrystallizationFormation(input.formation);
+      }
       for (const evidenceId of input.evidenceIds) {
         const current = currentObservation(draft, evidenceId);
         if (!current) {
@@ -318,6 +321,9 @@ export class MemoryEngine {
         invalidated: false,
         forgotten: false,
         rejected: false,
+        ...(input.formation === undefined
+          ? {}
+          : { formation: structuredClone(input.formation) }),
         excludedCounterevidence,
         excludedCounterevidenceIds: excludedCounterevidence.map((ref) => ref.id)
       };
@@ -1393,6 +1399,33 @@ export class MemoryEngine {
       pinned.push({ kind: "observation", id: row.observationId, version: row.version });
     }
     return pinned;
+  }
+
+  private assertCrystallizationFormation(
+    formation: NonNullable<CrystallizeInput["formation"]>
+  ): void {
+    if (!Number.isFinite(Date.parse(formation.at))) {
+      throw new OperationError(
+        "CRYSTALLIZE",
+        "formation time must be a valid ISO timestamp",
+        "temporal_validity"
+      );
+    }
+    const bounded: Array<[string, number]> = [
+      ["supportDensity", formation.supportDensity],
+      ["densityDelta", formation.densityDelta],
+      ["predictionError", formation.predictionError],
+      ["predictionErrorDrop", formation.predictionErrorDrop]
+    ];
+    for (const [name, value] of bounded) {
+      if (!Number.isFinite(value) || value < 0 || value > 1) {
+        throw new OperationError(
+          "CRYSTALLIZE",
+          `formation ${name} must be between zero and one`,
+          "uncertainty"
+        );
+      }
+    }
   }
 
   private normalizeStatement(statement: string | null): string {

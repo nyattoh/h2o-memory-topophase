@@ -60,6 +60,13 @@ The controller relies on pre-existing typed relations. It is the fixed baseline
 for later learning experiments, not evidence that relation discovery or a
 learned association policy is complete.
 
+## Stage C sudden-crystallisation metric test
+
+`test/crystallization-stage-c.test.ts` uses fixed synthetic support-density and
+prediction-error sequences. It checks gradual accumulation, abrupt threshold
+crossing, counterevidence traceability, correction invalidation, and timing
+errors. `npm test` runs this test with all other offline checks.
+
 ## Use from code
 
 ```ts

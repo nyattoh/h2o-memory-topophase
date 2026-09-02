@@ -14,6 +14,17 @@ export type {
   AssociationReason
 } from "./association.js";
 export type { TimedObservationSequence } from "./multimodal.js";
+export {
+  SuddenCrystallizationController,
+  evaluateCrystallizationTiming
+} from "./crystallization.js";
+export type {
+  CrystallizationDecision,
+  CrystallizationPlan,
+  CrystallizationSample,
+  CrystallizationThresholds,
+  CrystallizationTimingEvaluation
+} from "./crystallization.js";
 export { InjectedFailureError, InvariantError, OperationError } from "./errors.js";
 export { INVARIANT_IDS, INVARIANTS, isInvariantId } from "./invariants.js";
 export type { InvariantId } from "./invariants.js";
@@ -32,6 +43,8 @@ export type {
   ConsentScope,
   ConsentUse,
   CorrectInput,
+  CrystallizationFormation,
+  CrystallizationFormationMode,
   CrystallizeInput,
   DerivedKind,
   DerivedViewRecord,

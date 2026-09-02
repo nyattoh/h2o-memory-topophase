@@ -168,6 +168,22 @@ export interface AssemblyRecord {
   rejected: boolean;
 }
 
+export type CrystallizationFormationMode = "explicit" | "sudden_metric";
+
+/**
+ * Inspectable measurements recorded when an insight candidate is formed.
+ * These values describe an artificial controller, not a physical phase change
+ * or a model of human cognition.
+ */
+export interface CrystallizationFormation {
+  mode: CrystallizationFormationMode;
+  at: IsoTime;
+  supportDensity: number;
+  densityDelta: number;
+  predictionError: number;
+  predictionErrorDrop: number;
+}
+
 export interface InsightRecord {
   insightId: string;
   assemblyId: string | null;
@@ -180,6 +196,8 @@ export interface InsightRecord {
   invalidated: boolean;
   forgotten: boolean;
   rejected: boolean;
+  /** Present only when a controller supplied inspectable formation metrics. */
+  formation?: CrystallizationFormation;
   /** Version-pinned counterevidence. TRACE and internal records use these refs. */
   excludedCounterevidence: EntityRef[];
   /** Compatibility projection of pinned counterevidence IDs. Not used to resolve versions. */
@@ -317,6 +335,7 @@ export interface CrystallizeInput {
   statement?: string | null;
   uncertainty: UncertaintyRecord;
   falsificationConditions: string[];
+  formation?: CrystallizationFormation;
   /**
    * Compatibility input. String IDs are pinned to the current version at CRYSTALLIZE.
    * Entity refs keep an explicit version when provided.
