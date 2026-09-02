@@ -2,6 +2,17 @@ export { SequentialClock, SequentialIds } from "./clock.js";
 export { MemoryEngine } from "./engine.js";
 export type { EngineOptions } from "./engine.js";
 export { ingestTimedObservationSequence } from "./multimodal.js";
+export {
+  AssociativeAssemblyController,
+  lexicalOverlapBaseline,
+  recentWindowBaseline
+} from "./association.js";
+export type {
+  AssociationCandidate,
+  AssociationDecision,
+  AssociationOptions,
+  AssociationReason
+} from "./association.js";
 export type { TimedObservationSequence } from "./multimodal.js";
 export { InjectedFailureError, InvariantError, OperationError } from "./errors.js";
 export { INVARIANT_IDS, INVARIANTS, isInvariantId } from "./invariants.js";

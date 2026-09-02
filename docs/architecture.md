@@ -42,6 +42,21 @@ crystallisation, learned phase control, or integration into model computation.
 The existing deterministic `ASSEMBLE` and `CRYSTALLIZE` operations are explicit
 test controls, not evidence that those later mechanisms have been built.
 
+## H2O Core Stage B fixed baseline
+
+`AssociativeAssemblyController.onCue` is invoked when a new canonical cue
+observation arrives. It traverses typed `cue` relations without a recency cutoff,
+selects eligible old observations, adds linked `contradiction` observations as
+protected candidates, and invokes the existing audited `ASSEMBLE` operation only
+when the minimum direct-evidence count is met. Its decision exposes candidate
+IDs, selection reasons, scores, exclusions, and the resulting assembly ID.
+
+This is a deterministic comparison mechanism, not a learned controller. It
+requires cue relations to exist already and does not infer them from content.
+`recentWindowBaseline` and `lexicalOverlapBaseline` provide deliberately simple
+controls for the fixed synthetic case. No embedding model, LLM, vector database,
+network call, or paid API is used.
+
 ## Derived views
 
 `text`, `summary`, `vector`, `graph`, `token`, and `search_index` are replaceable indexes. They are generated only when the source observation permits `derive`. Each view records source versions and declares representation loss. A view is unusable when stale, forgotten, consent-blocked, or outside its temporal window. The vector view is a non-computed stub (`scheme: "none"`).

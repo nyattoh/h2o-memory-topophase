@@ -11,10 +11,11 @@ This is an in-memory reference prototype. It is not a release candidate and not 
 - **Stage A stores references, not media bytes.** Synthetic observations may carry
   an opaque original-material locator and SHA-256 digest. The prototype does not
   capture, decode, preserve, or replay audio, video, images, or sensor streams.
-- **No autonomous gathering or learned crystallization.** Existing assembly and
-  insight operations are explicit deterministic controls. The engine does not
-  independently seek weak old fragments, detect a sudden realization, or learn
-  what to gather and when to crystallize.
+- **Stage B is a typed-relation baseline, not learned association.** A new cue can
+  automatically activate old fragments through relations that already exist.
+  The engine does not infer those relations from raw observations, learn cue
+  representations, detect a sudden realisation, or learn what to gather and when
+  to crystallise.
 - **Not model-internal memory.** This remains an application-level reference
   engine and is not integrated into attention, recurrent state, activations, or
   trainable model parameters.

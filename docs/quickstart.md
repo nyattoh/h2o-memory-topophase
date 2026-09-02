@@ -49,6 +49,17 @@ npm test
 This test does not process media. `sourceMaterial.locator` is opaque and its
 SHA-256 digest is validated syntactically; the referenced bytes are not read.
 
+## Stage B delayed-cue test
+
+`test/association-stage-b.test.ts` uses old, low-frequency synthetic fragments,
+newer unrelated fillers, and a late typed cue. It verifies automatic assembly,
+unrelated-cue abstention, contradiction preservation, consent enforcement, and
+the outputs of simple recent-window and lexical-overlap controls.
+
+The controller relies on pre-existing typed relations. It is the fixed baseline
+for later learning experiments, not evidence that relation discovery or a
+learned association policy is complete.
+
 ## Use from code
 
 ```ts

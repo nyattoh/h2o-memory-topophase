@@ -22,6 +22,9 @@ Changing storage placement must not silently change epistemic status. Correction
 - H2O Core Stage A implemented: synthetic, time-aligned speech, prosody, pause,
   overlap, gesture, and recognizer-candidate observations can be retained before
   transcription as canonical records.
+- H2O Core Stage B fixed baseline implemented: a newly arrived typed cue can
+  automatically assemble old canonical fragments, while preserving linked
+  contradiction evidence and respecting current consent.
 - In-memory TypeScript reference engine on Node.js 22.
 - Deterministic offline tests; no LLM, embedding service, vector database, browser, cloud, or network dependency.
 - Canonical observation and event model with typed non-text evidence.
@@ -30,9 +33,10 @@ Changing storage placement must not silently change epistemic status. Correction
 - Explicit negative tests for stale views, revived corrections, inferred emotion, lost contradiction, and partial mutation.
 
 Stage A stores typed observation metadata and an opaque reference plus digest for
-the original material. It does not store or recognise media bytes. Autonomous
-fragment gathering, sudden insight crystallisation, learned phase control, and
-model-internal memory remain later stages, not current results.
+the original material. It does not store or recognise media bytes. Stage B uses
+pre-existing typed cue relations; it does not learn cue representations or infer
+relations from raw observations. Sudden insight crystallisation, learned phase
+control, and model-internal memory remain later stages, not current results.
 
 Keenable independent review is **not complete**. Keenable is not a dependency of this prototype.
 
