@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1060" viewBox="0 0 1200 1060" role="img" aria-labelledby="title desc">
+<title id="title">H2O Memory: canonical evidence, independent formation and storage</title>
+<desc id="desc">Versioned observations and events are the source of record; text, summaries, vectors, graphs, tokens and indices are replaceable derived views. Gas, water and ice are conceptual metaphors for dispersed fragments, assembling evidence and crystallized insight candidates. Epistemic phase and storage tier are independent. Hot, warm and cold concern placement only; cold is an in-process mock. Correction appends a version, stales dependent views and invalidates dependent insights. TRACE retains evidence, uncertainty and counterevidence subject to consent and validity. This reference prototype makes no physical phase-transition or resource-saving claim; vector views are uncomputed stubs.</desc>
+<defs>
+ <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#547181"/></marker>
+ <linearGradient id="water" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#7DD5DC"/><stop offset="1" stop-color="#1789A5"/></linearGradient>
+ <linearGradient id="ice" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#E7F8FF"/><stop offset="1" stop-color="#A7CDF6"/></linearGradient>
+</defs>
+<rect width="1200" height="1060" rx="24" fill="#FAFAF5"/>
+<g font-family="DejaVu Sans, Arial, sans-serif">
+<text x="44" y="43" font-size="14" font-weight="700" fill="#397183" text-anchor="start" letter-spacing="2">H2O MEMORY / TOPOPHASE</text>
+<text x="44" y="89" font-size="36" font-weight="700" fill="#152C43" text-anchor="start">Keep the evidence. Let the views change.</text>
+<text x="44" y="120" font-size="19" font-weight="400" fill="#547181" text-anchor="start">A reference architecture for auditable, revisable AI memory</text>
+<rect x="44" y="154" width="486" height="150" rx="18" fill="#142E45" stroke="none"/>
+<text x="68" y="187" font-size="14" font-weight="700" fill="#92CFD9" text-anchor="start" letter-spacing="1.5">SOURCE OF RECORD</text>
+<text x="68" y="222" font-size="28" font-weight="700" fill="#FFFFFF" text-anchor="start">Observations + events</text>
+<text x="68" y="254" font-size="18" font-weight="400" fill="#D5E4EB" text-anchor="start">Versioned · provenance-bearing · typed</text>
+<text x="68" y="281" font-size="17" font-weight="400" fill="#D5E4EB" text-anchor="start">Time, uncertainty and consent stay attached</text>
+<path d="M545 224H638" fill="none" stroke="#547181" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="591" y="204" font-size="15" font-weight="400" fill="#547181" text-anchor="middle">derive</text>
+<text x="591" y="250" font-size="13" font-weight="400" fill="#547181" text-anchor="middle">if allowed</text>
+<rect x="654" y="154" width="502" height="150" rx="18" fill="#FFFFFF" stroke="#CEDDE2"/>
+<text x="678" y="187" font-size="14" font-weight="700" fill="#397183" text-anchor="start" letter-spacing="1.5">REPLACEABLE DERIVED VIEWS</text>
+<text x="678" y="223" font-size="24" font-weight="700" fill="#152C43" text-anchor="start">Text · summaries · vectors*</text>
+<text x="678" y="255" font-size="22" font-weight="400" fill="#152C43" text-anchor="start">Graphs · tokens · search indices</text>
+<text x="678" y="282" font-size="16" font-weight="400" fill="#547181" text-anchor="start">Source versions + declared representation loss</text>
+<text x="44" y="352" font-size="20" font-weight="700" fill="#168BA2" text-anchor="start">01</text>
+<text x="88" y="352" font-size="19" font-weight="700" fill="#152C43" text-anchor="start" letter-spacing="1">EPISTEMIC PHASE</text>
+<text x="1156" y="351" font-size="18" font-weight="400" fill="#547181" text-anchor="end">How evidence forms</text>
+<rect x="44" y="374" width="350" height="300" rx="18" fill="#EFF5F6" stroke="none"/>
+<rect x="425" y="374" width="350" height="300" rx="18" fill="#EAF7F5" stroke="none"/>
+<rect x="806" y="374" width="350" height="300" rx="18" fill="#EBF2FC" stroke="none"/>
+<g transform="translate(104 395)"><path d="M35 90C3 85 0 40 31 30C40 3 78 -2 99 20C125 -4 161 12 165 39C205 39 220 84 190 102C158 115 65 113 35 90Z" fill="#DAE9EE" stroke="#9BB6C4" stroke-width="2" stroke-dasharray="5 5"/>
+<circle cx="34" cy="54" r="7" fill="#4E879F"/>
+<circle cx="71" cy="37" r="6" fill="#4E879F"/>
+<circle cx="102" cy="70" r="8" fill="#4E879F"/>
+<circle cx="145" cy="46" r="7" fill="#4E879F"/>
+<circle cx="169" cy="86" r="6" fill="#4E879F"/>
+<circle cx="59" cy="89" r="8" fill="#4E879F"/>
+<circle cx="119" cy="22" r="4" fill="#4E879F"/>
+</g>
+<g transform="translate(535 393)"><path d="M65 0C47 28 9 62 9 91A56 56 0 0 0 121 91C121 62 83 28 65 0Z" fill="url(#water)" stroke="#198DA5" stroke-width="2"/><path d="M32 90Q48 70 65 87T100 87" fill="none" stroke="#BAEDF0" stroke-width="4" stroke-linecap="round"/><path d="M37 112Q53 102 68 115T100 111" fill="none" stroke="#BAEDF0" stroke-width="3" stroke-linecap="round"/></g>
+<g transform="translate(901 394)"><path d="M0 40L80 0L160 40L80 83Z" fill="#DDF2FF" stroke="#5389C0" stroke-width="2"/><path d="M0 40L80 83V156L0 112Z" fill="#9DC6EF" stroke="#5389C0" stroke-width="2"/><path d="M80 83L160 40V112L80 156Z" fill="url(#ice)" stroke="#5389C0" stroke-width="2"/><path d="M17 42L78 12L140 42M17 66V102L62 127M97 91L141 68V101" fill="none" stroke="#FFFFFF" stroke-width="3" opacity=".7"/></g>
+<text x="219" y="574" font-size="13" font-weight="700" fill="#397183" text-anchor="middle" letter-spacing="2">GAS</text>
+<text x="219" y="606" font-size="27" font-weight="700" fill="#152C43" text-anchor="middle">dispersed</text>
+<text x="219" y="635" font-size="17" font-weight="400" fill="#152C43" text-anchor="middle">Unresolved fragments</text>
+<text x="219" y="658" font-size="16" font-weight="400" fill="#547181" text-anchor="middle">available for recombination</text>
+<text x="600" y="574" font-size="13" font-weight="700" fill="#397183" text-anchor="middle" letter-spacing="2">WATER</text>
+<text x="600" y="606" font-size="27" font-weight="700" fill="#152C43" text-anchor="middle">assembling</text>
+<text x="600" y="635" font-size="17" font-weight="400" fill="#152C43" text-anchor="middle">Cue-linked evidence</text>
+<text x="600" y="658" font-size="16" font-weight="400" fill="#547181" text-anchor="middle">grouped without rewriting</text>
+<text x="981" y="574" font-size="13" font-weight="700" fill="#397183" text-anchor="middle" letter-spacing="2">ICE</text>
+<text x="981" y="606" font-size="27" font-weight="700" fill="#152C43" text-anchor="middle">crystallized</text>
+<text x="981" y="635" font-size="17" font-weight="400" fill="#152C43" text-anchor="middle">Insight candidates</text>
+<text x="981" y="658" font-size="16" font-weight="400" fill="#547181" text-anchor="middle">with uncertainty + falsifiers</text>
+<path d="M380 474H437" fill="none" stroke="#547181" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M761 474H818" fill="none" stroke="#547181" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="600" y="702" font-size="17" font-weight="400" fill="#547181" text-anchor="middle">Conceptual metaphors, not physical states. Reopening can revise formation.</text>
+<text x="44" y="753" font-size="20" font-weight="700" fill="#168BA2" text-anchor="start">02</text>
+<text x="88" y="753" font-size="19" font-weight="700" fill="#152C43" text-anchor="start" letter-spacing="1">STORAGE TIER</text>
+<text x="1156" y="752" font-size="18" font-weight="400" fill="#547181" text-anchor="end">Where records are placed</text>
+<rect x="44" y="774" width="1112" height="86" rx="18" fill="#FFFFFF" stroke="#CEDDE2"/>
+<text x="82" y="810" font-size="23" font-weight="700" fill="#152C43" text-anchor="start">hot</text>
+<text x="82" y="837" font-size="16" font-weight="400" fill="#547181" text-anchor="start">resident</text>
+<text x="290" y="810" font-size="23" font-weight="700" fill="#152C43" text-anchor="start">warm</text>
+<text x="290" y="837" font-size="16" font-weight="400" fill="#547181" text-anchor="start">working set</text>
+<text x="533" y="810" font-size="23" font-weight="700" fill="#152C43" text-anchor="start">cold</text>
+<text x="533" y="837" font-size="16" font-weight="400" fill="#547181" text-anchor="start">in-process mock</text>
+<path d="M787 793V841" stroke="#CEDDE2"/>
+<text x="815" y="811" font-size="20" font-weight="700" fill="#0F778E" text-anchor="start">Independent axes</text>
+<text x="815" y="838" font-size="16" font-weight="400" fill="#547181" text-anchor="start">A tier move does not change phase.</text>
+<rect x="44" y="886" width="1112" height="119" rx="18" fill="#E7EDF0" stroke="none"/>
+<text x="66" y="919" font-size="14" font-weight="700" fill="#397183" text-anchor="start" letter-spacing="1">CORRECT</text>
+<text x="209" y="919" font-size="18" font-weight="500" fill="#152C43" text-anchor="start">New version → stale views + invalidated dependent insights</text>
+<text x="66" y="952" font-size="14" font-weight="700" fill="#397183" text-anchor="start" letter-spacing="1">TRACE</text>
+<text x="209" y="952" font-size="18" font-weight="500" fill="#152C43" text-anchor="start">Evidence, uncertainty and excluded counterevidence</text>
+<text x="66" y="984" font-size="17" font-weight="400" fill="#547181" text-anchor="start">Consent, temporal validity, refusal and forgetting govern what can be re-presented.</text>
+<text x="44" y="1035" font-size="16" font-weight="400" fill="#547181" text-anchor="start">Prototype boundary: cold is not persistent storage. *Vectors are stubs. No resource-saving claim.</text>
+</g></svg>
