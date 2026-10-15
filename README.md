@@ -20,6 +20,12 @@ The design separates two axes:
 
 Changing storage placement must not silently change epistemic status. Corrections, consent withdrawal, deletion, uncertainty, provenance, temporal validity, and excluded counterevidence must propagate through derived views.
 
+## Architecture at a glance
+
+![H2O Memory architecture: versioned canonical observations and events produce replaceable views; gas, water and ice illustrate dispersed, assembling and crystallized epistemic phases, independently of hot, warm and cold storage tiers.](docs/assets/architecture.svg)
+
+Gas, water and ice are conceptual metaphors for evidence formation, not physical states or storage tiers. Crystallized insights remain candidates with uncertainty and falsification conditions. The current prototype uses an in-process cold mock and non-computed vector stubs; it makes no resource-saving claim. See [Architecture](docs/architecture.md) for the full contracts.
+
 ## Current status
 
 - H2O Core Stage A implemented: synthetic, time-aligned speech, prosody, pause,
